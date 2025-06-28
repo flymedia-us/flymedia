@@ -25,7 +25,7 @@ const ForPerformers = () => {
   ];
 
   return (
-    <section id="performers" className="py-20 px-6 bg-gradient-to-br from-gray-900/30 to-black">
+    <section id="performers" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -38,9 +38,9 @@ const ForPerformers = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {performerTypes.map((performer, index) => (
-            <Card key={index} className="bg-black/60 border-gray-800 hover:border-red-600/50 transition-all duration-300">
+            <Card key={index} className="dynamic-card animate-shimmer">
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-4 bg-red-600/10 rounded-full w-fit">
+                <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit animate-float">
                   {performer.icon}
                 </div>
                 <CardTitle className="text-white text-2xl">{performer.title}</CardTitle>

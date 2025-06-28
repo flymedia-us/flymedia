@@ -2,24 +2,32 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-sm border-b border-red-900/20">
+    <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-blue-900/30">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">
+          <Link to="/" className="text-2xl font-bold gradient-text">
             FLY MEDIA
-          </div>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</a>
-            <a href="#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</a>
-            <a href="#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</a>
-            <Button className="bg-red-600 hover:bg-red-700 text-white">
+            <Link to="/#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</Link>
+            <Link to="/#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</Link>
+            <Link to="/#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</Link>
+            <Link 
+              to="/pricing" 
+              className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/pricing' ? 'text-red-500' : ''}`}
+            >
+              Pricing
+            </Link>
+            <Button className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
               Get Started
             </Button>
           </nav>
@@ -35,12 +43,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-red-900/20">
+          <nav className="md:hidden mt-4 pb-4 border-t border-blue-900/30">
             <div className="flex flex-col space-y-4 pt-4">
-              <a href="#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</a>
-              <a href="#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</a>
-              <a href="#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</a>
-              <Button className="bg-red-600 hover:bg-red-700 text-white w-full">
+              <Link to="/#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</Link>
+              <Link to="/#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</Link>
+              <Link to="/#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</Link>
+              <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
+              <Button className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
                 Get Started
               </Button>
             </div>

@@ -45,14 +45,14 @@ const Process = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-gray-900/50 border-gray-800 hover:border-red-600/50 transition-all duration-300 relative overflow-hidden">
+            <Card key={index} className="dynamic-card relative overflow-hidden animate-shimmer">
               {/* Step number background */}
-              <div className="absolute top-4 right-4 text-6xl font-bold text-red-600/10">
+              <div className="absolute top-4 right-4 text-6xl font-bold text-blue-600/10 animate-rotate-slow">
                 {step.step}
               </div>
               
               <CardHeader className="relative z-10">
-                <div className="mb-4 p-3 bg-red-600/10 rounded-full w-fit">
+                <div className="mb-4 p-3 bg-black/30 rounded-full w-fit">
                   {step.icon}
                 </div>
                 <CardTitle className="text-white text-xl">{step.title}</CardTitle>
@@ -67,7 +67,7 @@ const Process = () => {
         </div>
         
         <div className="text-center mt-16">
-          <div className="inline-flex items-center px-6 py-3 bg-red-600/10 border border-red-600/30 rounded-full">
+          <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full animate-shimmer">
             <span className="text-red-400 font-medium">⚡ Average turnaround: 24-48 hours</span>
           </div>
         </div>
