@@ -51,9 +51,9 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="dynamic-card animate-shimmer">
+            <Card key={index} className="dynamic-card">
               <CardHeader>
-                <div className="mb-4 p-3 bg-black/30 rounded-full w-fit animate-rotate-slow">
+                <div className="mb-4 p-3 bg-black/30 rounded-full w-fit">
                   {service.icon}
                 </div>
                 <CardTitle className="text-white text-xl">{service.title}</CardTitle>

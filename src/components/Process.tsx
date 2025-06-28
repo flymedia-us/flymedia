@@ -45,9 +45,9 @@ const Process = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="dynamic-card relative overflow-hidden animate-shimmer">
+            <Card key={index} className="dynamic-card relative overflow-hidden">
               {/* Step number background */}
-              <div className="absolute top-4 right-4 text-6xl font-bold text-blue-600/10 animate-rotate-slow">
+              <div className="absolute top-4 right-4 text-6xl font-bold text-blue-600/10">
                 {step.step}
               </div>
               
@@ -67,7 +67,7 @@ const Process = () => {
         </div>
         
         <div className="text-center mt-16">
-          <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full animate-shimmer">
+          <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full">
             <span className="text-red-400 font-medium">⚡ Average turnaround: 24-48 hours</span>
           </div>
         </div>

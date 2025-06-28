@@ -8,9 +8,9 @@ import Footer from '@/components/Footer';
 const Pricing = () => {
   const plans = [
     {
-      name: "Starter",
+      name: "Basic",
       icon: <Zap className="w-8 h-8 text-blue-500" />,
-      price: "$299",
+      price: "$749",
       period: "/month",
       description: "Perfect for individual performers starting their viral journey",
       features: [
@@ -25,9 +25,9 @@ const Pricing = () => {
       gradient: "from-blue-600/20 to-purple-600/20"
     },
     {
-      name: "Pro",
+      name: "Growth",
       icon: <Star className="w-8 h-8 text-red-500" />,
-      price: "$599",
+      price: "$1,499",
       period: "/month",
       description: "Ideal for active performers ready to dominate social media",
       features: [
@@ -44,9 +44,9 @@ const Pricing = () => {
       gradient: "from-red-600/20 to-orange-600/20"
     },
     {
-      name: "Elite",
+      name: "Pro",
       icon: <Crown className="w-8 h-8 text-yellow-500" />,
-      price: "$999",
+      price: "$3,999",
       period: "/month",
       description: "For established performers who want maximum viral potential",
       features: [
@@ -101,7 +101,7 @@ const Pricing = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-50`}></div>
                 
                 <CardHeader className="relative z-10 text-center pb-4">
-                  <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit animate-shimmer">
+                  <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
                     {plan.icon}
                   </div>
                   <CardTitle className="text-white text-2xl mb-2">{plan.name}</CardTitle>
