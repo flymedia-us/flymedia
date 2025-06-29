@@ -68,6 +68,7 @@ const Pricing = () => {
         "• X • Threads • Bluesky",
         "• Add more at no extra cost",
         "You keep 100% platform rewards",
+        "Custom thumbnails for all videos",
         "Targeted brand strategy",
         "Personal direct company contact",
         "Profile and website enhancement",
