@@ -16,8 +16,8 @@ const CTA = () => {
 
   const benefits = [
     "Transform existing footage into viral content",
-    "Cross-post across 5 major platforms",
-    "24-48 hour turnaround time",
+    "Cross-post across all major platforms",
+    "Revisions with 24-48 hour turnaround",
     "Dedicated account manager",
     "Performance analytics & optimization",
     "No long-term contracts"
