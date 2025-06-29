@@ -64,8 +64,16 @@ const Hero = () => {
               Book a Complimentary Call
             </Button>
             
-            <Button size="lg" variant="outline" className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white px-8 py-4 text-lg w-full sm:w-auto">
-              See Our Work
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-red-600 text-red-500 px-8 py-4 text-lg w-full sm:w-auto group relative overflow-hidden bg-transparent transition-colors duration-300"
+              type="button"
+            >
+              <span className="block group-hover:opacity-0 group-hover:translate-y-2 transition-all duration-300">See Our Work</span>
+              <span className="absolute left-0 right-0 top-0 bottom-0 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 transition-all duration-300">
+                Coming Soon
+              </span>
             </Button>
           </div>
           
