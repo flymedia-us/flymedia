@@ -75,7 +75,7 @@ const Hero = () => {
           {/* Large animated counter */}
           <div className="mt-16 w-full max-w-full">
             <div className="text-center">
-              <div className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text mb-4 font-mono tracking-wider">
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text mb-4 tracking-wider">
                 {viewCount.toLocaleString()}
               </div>
               <div className="text-xl md:text-2xl text-gray-300">Views generated for our clients, and counting...</div>

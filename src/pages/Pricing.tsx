@@ -14,12 +14,17 @@ const Pricing = () => {
       period: "/month",
       description: "Perfect for individual performers starting their viral journey",
       features: [
-        "5 videos per month",
-        "Cross-post to 3 platforms",
-        "Basic editing & optimization",
-        "24-48 hour turnaround",
-        "Email support",
-        "Performance analytics"
+        "3x edited videos/week",
+        "0% booking commission",
+        "Unlimited cloud storage",
+        "Monthly analytics report",
+        "Core platforms:",
+        "• YouTube",
+        "• Instagram", 
+        "• TikTok",
+        "• Facebook",
+        "• Snapchat",
+        "We reinvest platform payouts"
       ],
       popular: false,
       gradient: "from-blue-600/20 to-purple-600/20"
@@ -31,14 +36,18 @@ const Pricing = () => {
       period: "/month",
       description: "Ideal for active performers ready to dominate social media",
       features: [
-        "15 videos per month",
-        "Cross-post to all 5 platforms",
-        "Advanced editing & effects",
-        "12-24 hour turnaround",
-        "Priority support",
-        "Detailed analytics & insights",
-        "Custom hashtag strategy",
-        "Trending topic integration"
+        "7x edited videos/week",
+        "0% booking commission",
+        "Unlimited cloud storage",
+        "Monthly analytics report",
+        "Core platforms:",
+        "• YouTube",
+        "• Instagram",
+        "• TikTok", 
+        "• Facebook",
+        "• Snapchat",
+        "Add more at $100/platform",
+        "Platform rewards split 50-50"
       ],
       popular: true,
       gradient: "from-red-600/20 to-orange-600/20"
@@ -50,16 +59,23 @@ const Pricing = () => {
       period: "/month",
       description: "For established performers who want maximum viral potential",
       features: [
-        "Unlimited videos",
-        "Cross-post to all 5 platforms",
-        "Premium editing & custom effects",
-        "Same-day turnaround",
-        "Dedicated account manager",
-        "Advanced analytics dashboard",
-        "Personal brand development",
-        "Viral strategy consulting",
-        "Custom thumbnail creation",
-        "A/B testing optimization"
+        "Up to 14x edited videos/week",
+        "0% booking commission",
+        "Unlimited cloud storage",
+        "Monthly analytics report",
+        "Unlimited platforms:",
+        "• YouTube • Instagram • TikTok",
+        "• Facebook • Snapchat • LinkedIn",
+        "• X • Threads • Bluesky",
+        "Add more at no extra cost",
+        "You keep 100% platform rewards",
+        "Targeted brand strategy",
+        "Personal direct company contact",
+        "Profile and website enhancement",
+        "Online community engagement",
+        "Story re-sharing",
+        "Comment responding",
+        "Automatic comments"
       ],
       popular: false,
       gradient: "from-yellow-600/20 to-amber-600/20"
@@ -115,11 +131,19 @@ const Pricing = () => {
                 </CardHeader>
                 
                 <CardContent className="relative z-10 space-y-6 flex-grow flex flex-col">
-                  <ul className="space-y-4 flex-grow">
+                  <ul className="space-y-3 flex-grow text-sm">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start text-gray-200">
-                        <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                        <span>{feature}</span>
+                        {feature.startsWith('•') ? (
+                          <span className="ml-6">{feature}</span>
+                        ) : feature.endsWith(':') ? (
+                          <span className="font-semibold text-white">{feature}</span>
+                        ) : (
+                          <>
+                            <Check className="w-4 h-4 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                            <span>{feature}</span>
+                          </>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -133,7 +157,7 @@ const Pricing = () => {
                     onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
                   >
                     <Calendar className="mr-2 w-4 h-4" />
-                    Ready for takeoff?
+                    Book a Complimentary Call
                   </Button>
                 </CardContent>
               </Card>
