@@ -27,18 +27,18 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Platforms</h4>
             <ul className="space-y-2 text-gray-400">
+              <li>YouTube Shorts</li> 
               <li>TikTok</li>
               <li>Instagram Reels</li>
-              <li>YouTube Shorts</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
+              <li>Facebook Reels</li>
+              <li>Snapchat Spotlight</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-red-900/20 mt-8 pt-8 text-center">
           <p className="text-gray-500">
-            © 2024 Fly Media. All rights reserved. Ready to go viral?
+            © 2025 Fly Media LLC. All rights reserved. Ready to go viral?
           </p>
         </div>
       </div>
