@@ -94,10 +94,10 @@ const Pricing = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-slide-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Choose Your <span className="gradient-text">Viral Plan</span>
+              Go <span className="gradient-text">Viral.</span> Not Broke.
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-              From individual performers to viral sensations - we have the perfect plan to launch your social media success.
+              Pick the perfect plan to launch your social media success.
             </p>
           </div>
           

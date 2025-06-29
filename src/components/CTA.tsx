@@ -54,7 +54,7 @@ const CTA = () => {
             {/* CTA Section */}
             <div className="bg-black/40 p-8 rounded-lg border border-red-600/20">
               <h3 className="text-2xl font-bold text-center mb-4 text-white">
-                Book Your Complimentary Call
+                Let's Talk
               </h3>
               <p className="text-gray-400 text-center mb-6">
                 Schedule a free consultation to discuss your viral content strategy and see how we can transform your social media presence.
