@@ -46,7 +46,7 @@ const Pricing = () => {
         "• TikTok", 
         "• Facebook",
         "• Snapchat",
-        "Add more at $100/platform",
+        "• Add more at $100/platform",
         "Platform rewards split 50-50"
       ],
       popular: true,
@@ -67,7 +67,7 @@ const Pricing = () => {
         "• YouTube • Instagram • TikTok",
         "• Facebook • Snapchat • LinkedIn",
         "• X • Threads • Bluesky",
-        "Add more at no extra cost",
+        "• Add more at no extra cost",
         "You keep 100% platform rewards",
         "Targeted brand strategy",
         "Personal direct company contact",
