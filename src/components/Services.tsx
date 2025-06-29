@@ -11,8 +11,8 @@ const Services = () => {
     },
     {
       icon: <Share2 className="w-8 h-8 text-red-500" />,
-      title: "5-Platform Cross-Posting",
-      description: "Simultaneous posting across TikTok, Instagram Reels, YouTube Shorts, Twitter, and Facebook to maximize your reach."
+      title: "Multi-Platform Cross-Posting",
+      description: "Maximize your reach with simultaneous posting across TikTok, Instagram, YouTube, Facebook, and Snapchat; standard on all plans."
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-red-500" />,
