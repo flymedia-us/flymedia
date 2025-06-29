@@ -32,8 +32,10 @@ const Header = () => {
             >
               Contact
             </Link>
-            <Button className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
-              Get Started
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
+              <a href="https://calendar.app.google/PRzwkEYHEnnaJbFR8" target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
             </Button>
           </nav>
 
@@ -55,8 +57,10 @@ const Header = () => {
               <Link to="/#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</Link>
               <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
               <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
-              <Button className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
-                Get Started
+              <Button asChild className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
+                <a href="https://calendar.app.google/PRzwkEYHEnnaJbFR8" target="_blank" rel="noopener noreferrer">
+                  Get Started
+                </a>
               </Button>
             </div>
           </nav>
