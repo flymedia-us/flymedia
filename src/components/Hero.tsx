@@ -23,9 +23,9 @@ const Hero = () => {
         
         // Start slow counting phase
         const slowTimer = setInterval(() => {
-          currentCount += Math.random() * 50 + 10; // Add 10-60 views randomly
+          currentCount ++
           setViewCount(Math.floor(currentCount));
-        }, 2000); // Update every 2 seconds
+        }, 500); // Update every 2 seconds
         
         return () => clearInterval(slowTimer);
       }
@@ -54,7 +54,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto break-words">
             We transform your existing footage into viral short-form videos and cross-post across 5 platforms simultaneously. 
-            Perfect for magicians, comedians, and jugglers ready to explode on social media.
+            Perfect for performers ready to explode on social media.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 w-full">
