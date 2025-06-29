@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check, Star, Zap, Crown, Calendar } from 'lucide-react';
@@ -147,23 +146,22 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  
-                  <Button 
-                    size="lg" 
-                    className={`w-full mt-auto ${plan.popular 
-                      ? 'bg-red-600 hover:bg-red-700 animate-pulse-glow' 
-                      : 'bg-blue-600 hover:bg-blue-700'
-                    } text-white py-4 text-lg`}
-                    onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
-                  >
-                    <Calendar className="mr-2 w-4 h-4" />
-                    Book a Complimentary Call
-                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
-          
+
+          <div className="flex justify-center mt-10">
+            <Button 
+              size="lg" 
+              className="w-full max-w-md bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg"
+              onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
+            >
+              <Calendar className="mr-2 w-4 h-4" />
+              Book a Complimentary Call
+            </Button>
+          </div>
+
           <div className="text-center mt-16">
             <p className="text-gray-400 mb-4">Need a custom plan? Have questions?</p>
             <Button 
