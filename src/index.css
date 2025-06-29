@@ -122,24 +122,40 @@
 /* Mobile hero text positioning fix */
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 8rem; /* Ensure text is below mobile header */
+    padding-top: 6rem; /* Ensure text is below mobile header */
+    padding-bottom: 2rem;
   }
 }
 
-/* Custom scrollbar */
+/* Prevent horizontal scroll */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+#root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar - simplified */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #0a0a23, #1a1a2e);
+  background: #1a1a2e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #DC2626, #3B82F6);
+  background: #DC2626;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #EF4444, #60A5FA);
+  background: #EF4444;
 }
