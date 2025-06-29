@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -27,6 +26,12 @@ const Header = () => {
             >
               Pricing
             </Link>
+            <Link 
+              to="/contact" 
+              className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/contact' ? 'text-red-500' : ''}`}
+            >
+              Contact
+            </Link>
             <Button className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
               Get Started
             </Button>
@@ -49,6 +54,7 @@ const Header = () => {
               <Link to="/#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</Link>
               <Link to="/#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</Link>
               <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
+              <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
               <Button className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
                 Get Started
               </Button>

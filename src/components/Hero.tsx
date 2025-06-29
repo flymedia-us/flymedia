@@ -25,7 +25,7 @@ const Hero = () => {
         const slowTimer = setInterval(() => {
           currentCount ++
           setViewCount(Math.floor(currentCount));
-        }, 500); // Update every 2 seconds
+        }, 500); // Update every half second
         
         return () => clearInterval(slowTimer);
       }

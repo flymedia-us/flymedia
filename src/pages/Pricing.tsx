@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Star, Zap, Crown, Calendar } from 'lucide-react';
+import { Check, Star, Zap, Crown, Calendar, Mail } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -165,13 +165,15 @@ const Pricing = () => {
           <div className="text-center mt-16">
             <p className="text-gray-400 mb-4">Need a custom plan? Have questions?</p>
             <Button 
+              asChild
               variant="outline" 
               size="lg" 
               className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white"
-              onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
             >
-              <Calendar className="mr-2 w-4 h-4" />
-              Ready for takeoff?
+              <a href="/contact">
+                <Mail className="mr-2 w-4 h-4" />
+                Contact Us
+              </a>
             </Button>
           </div>
         </div>
