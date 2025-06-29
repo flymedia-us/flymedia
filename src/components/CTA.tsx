@@ -33,7 +33,7 @@ const CTA = () => {
         <Card className="max-w-4xl mx-auto bg-gray-900/80 border-red-600/30 backdrop-blur-sm">
           <CardHeader className="text-center pb-8">
             <CardTitle className="text-4xl md:text-5xl font-bold mb-4">
-              Ready to <span className="gradient-text">Go Viral?</span>
+              <span className="gradient-text">Ready for takeoff?</span>
             </CardTitle>
             <CardDescription className="text-xl text-gray-300 max-w-2xl mx-auto">
               Join hundreds of performers who've transformed their social media presence with our viral content strategy.
@@ -66,7 +66,7 @@ const CTA = () => {
                   onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
                 >
                   <Calendar className="mr-2 w-5 h-5" />
-                  Ready for takeoff?
+                  Book a Complimentary Call
                 </Button>
               </div>
               

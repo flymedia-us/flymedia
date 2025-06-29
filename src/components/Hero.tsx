@@ -7,22 +7,32 @@ const Hero = () => {
   const [viewCount, setViewCount] = useState(0);
 
   useEffect(() => {
-    const targetCount = 40;
-    const duration = 3000; // 3 seconds
-    const increment = targetCount / (duration / 50); // Update every 50ms
+    const targetCount = 40000000; // 40 million
+    const fastDuration = 3000; // 3 seconds to reach 40M
+    const fastIncrement = targetCount / (fastDuration / 16); // Update every 16ms for smooth animation
     
-    const timer = setInterval(() => {
-      setViewCount(prev => {
-        const next = prev + increment;
-        if (next >= targetCount) {
-          clearInterval(timer);
-          return targetCount;
-        }
-        return next;
-      });
-    }, 50);
+    let currentCount = 0;
+    
+    // Fast counting phase
+    const fastTimer = setInterval(() => {
+      currentCount += fastIncrement;
+      if (currentCount >= targetCount) {
+        currentCount = targetCount;
+        setViewCount(currentCount);
+        clearInterval(fastTimer);
+        
+        // Start slow counting phase
+        const slowTimer = setInterval(() => {
+          currentCount += Math.random() * 50 + 10; // Add 10-60 views randomly
+          setViewCount(Math.floor(currentCount));
+        }, 2000); // Update every 2 seconds
+        
+        return () => clearInterval(slowTimer);
+      }
+      setViewCount(Math.floor(currentCount));
+    }, 16);
 
-    return () => clearInterval(timer);
+    return () => clearInterval(fastTimer);
   }, []);
 
   return (
@@ -54,7 +64,7 @@ const Hero = () => {
               onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
             >
               <Calendar className="mr-2" size={20} />
-              Ready for takeoff?
+              Book a Complimentary Call
             </Button>
             
             <Button size="lg" variant="outline" className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white px-8 py-4 text-lg w-full sm:w-auto">
@@ -62,13 +72,13 @@ const Hero = () => {
             </Button>
           </div>
           
-          {/* Single animated counter */}
+          {/* Large animated counter */}
           <div className="mt-16 w-full max-w-full">
             <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold gradient-text mb-4">
-                {Math.floor(viewCount)}M+
+              <div className="text-6xl md:text-7xl lg:text-8xl font-bold gradient-text mb-4 font-mono tracking-wider">
+                {viewCount.toLocaleString()}
               </div>
-              <div className="text-xl md:text-2xl text-gray-300">Views Generated for Our Clients</div>
+              <div className="text-xl md:text-2xl text-gray-300">Views generated for our clients, and counting...</div>
             </div>
           </div>
         </div>
