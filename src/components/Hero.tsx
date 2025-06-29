@@ -51,7 +51,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto break-words">
-            We transform your existing footage into short-form videos designed to go viral and cross-post on up to 10 platforms simultaneously. 
+            We transform your footage into short-form videos designed to go viral and cross-post on up to 10 platforms simultaneously. 
             Perfect for performers ready to explode on social media.
           </p>
           

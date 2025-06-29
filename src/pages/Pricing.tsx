@@ -82,7 +82,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen animate-gradient text-white">
+    <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden fixed left-0 right-0 top-0 bottom-0">
       {/* Floating orbs */}
       <div className="floating-orb w-96 h-96 top-10 -left-20 animate-float"></div>
       <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{animationDelay: '2s'}}></div>
