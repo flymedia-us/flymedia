@@ -119,6 +119,13 @@
   pointer-events: none;
 }
 
+/* Mobile hero text positioning fix */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 8rem; /* Ensure text is below mobile header */
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

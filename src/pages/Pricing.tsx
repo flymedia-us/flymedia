@@ -86,11 +86,11 @@ const Pricing = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
             {plans.map((plan, index) => (
               <Card 
                 key={index} 
-                className={`dynamic-card relative overflow-hidden ${plan.popular ? 'ring-2 ring-red-500 scale-105' : ''}`}
+                className={`dynamic-card relative overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-red-500' : ''}`}
               >
                 {plan.popular && (
                   <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-red-600 to-orange-600 text-white text-center py-2 text-sm font-semibold">
@@ -114,8 +114,8 @@ const Pricing = () => {
                   </CardDescription>
                 </CardHeader>
                 
-                <CardContent className="relative z-10 space-y-6">
-                  <ul className="space-y-4">
+                <CardContent className="relative z-10 space-y-6 flex-grow flex flex-col">
+                  <ul className="space-y-4 flex-grow">
                     {plan.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start text-gray-200">
                         <Check className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
@@ -126,7 +126,7 @@ const Pricing = () => {
                   
                   <Button 
                     size="lg" 
-                    className={`w-full ${plan.popular 
+                    className={`w-full mt-auto ${plan.popular 
                       ? 'bg-red-600 hover:bg-red-700 animate-pulse-glow' 
                       : 'bg-blue-600 hover:bg-blue-700'
                     } text-white py-4 text-lg`}
