@@ -17,9 +17,6 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/#services" className="text-gray-300 hover:text-red-500 transition-colors">Services</Link>
-            <Link to="/#process" className="text-gray-300 hover:text-red-500 transition-colors">Process</Link>
-            <Link to="/#performers" className="text-gray-300 hover:text-red-500 transition-colors">For Performers</Link>
             <Link 
               to="/pricing" 
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/pricing' ? 'text-red-500' : ''}`}
