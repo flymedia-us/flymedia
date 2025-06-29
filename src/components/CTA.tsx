@@ -2,7 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, ArrowRight } from 'lucide-react';
+import { CheckCircle, Calendar } from 'lucide-react';
 import { useState } from 'react';
 
 const CTA = () => {
@@ -51,35 +51,27 @@ const CTA = () => {
               ))}
             </div>
             
-            {/* CTA Form */}
+            {/* CTA Section */}
             <div className="bg-black/40 p-8 rounded-lg border border-red-600/20">
               <h3 className="text-2xl font-bold text-center mb-4 text-white">
-                Get Started Today
+                Book Your Complimentary Call
               </h3>
               <p className="text-gray-400 text-center mb-6">
-                Enter your email and we'll send you our viral content strategy guide + set up your free consultation.
+                Schedule a free consultation to discuss your viral content strategy and see how we can transform your social media presence.
               </p>
               
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-gray-800 border-gray-700 text-white placeholder-gray-400"
-                  required
-                />
+              <div className="flex justify-center">
                 <Button 
-                  type="submit" 
-                  className="bg-red-600 hover:bg-red-700 text-white px-8 whitespace-nowrap animate-pulse-glow"
+                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow"
+                  onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
                 >
-                  Start Going Viral
-                  <ArrowRight className="ml-2 w-4 h-4" />
+                  <Calendar className="mr-2 w-5 h-5" />
+                  Ready for takeoff?
                 </Button>
-              </form>
+              </div>
               
               <p className="text-xs text-gray-500 text-center mt-4">
-                No spam. Unsubscribe anytime. Free consultation included.
+                No obligation. Free consultation included.
               </p>
             </div>
           </CardContent>

@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Star, Zap, Crown } from 'lucide-react';
+import { Check, Star, Zap, Crown, Calendar } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -130,8 +130,10 @@ const Pricing = () => {
                       ? 'bg-red-600 hover:bg-red-700 animate-pulse-glow' 
                       : 'bg-blue-600 hover:bg-blue-700'
                     } text-white py-4 text-lg`}
+                    onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
                   >
-                    Get Started
+                    <Calendar className="mr-2 w-4 h-4" />
+                    Ready for takeoff?
                   </Button>
                 </CardContent>
               </Card>
@@ -140,8 +142,14 @@ const Pricing = () => {
           
           <div className="text-center mt-16">
             <p className="text-gray-400 mb-4">Need a custom plan? Have questions?</p>
-            <Button variant="outline" size="lg" className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white">
-              Contact Us
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white"
+              onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
+            >
+              <Calendar className="mr-2 w-4 h-4" />
+              Ready for takeoff?
             </Button>
           </div>
         </div>
