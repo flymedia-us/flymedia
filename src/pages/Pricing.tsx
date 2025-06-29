@@ -154,10 +154,10 @@ const Pricing = () => {
           <div className="flex justify-center mt-10">
             <Button 
               size="lg" 
-              className="w-full max-w-md bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
               onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
             >
-              <Calendar className="mr-2 w-4 h-4" />
+              <Calendar className="mr-2" size={20} />
               Book a Complimentary Call
             </Button>
           </div>
