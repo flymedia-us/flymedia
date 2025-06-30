@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -22,6 +23,12 @@ const Header = () => {
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/pricing' ? 'text-red-500' : ''}`}
             >
               Pricing
+            </Link>
+            <Link 
+              to="/clients" 
+              className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/clients' ? 'text-red-500' : ''}`}
+            >
+              Clients
             </Link>
             <Link 
               to="/contact" 
@@ -50,6 +57,7 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t border-blue-900/30">
             <div className="flex flex-col space-y-4 pt-4">
               <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
+              <Link to="/clients" className="text-gray-300 hover:text-red-500 transition-colors">Clients</Link>
               <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
               <Button asChild className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
                 <a href="https://calendar.app.google/PRzwkEYHEnnaJbFR8" target="_blank" rel="noopener noreferrer">

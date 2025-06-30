@@ -57,63 +57,16 @@ const ForPerformers = () => {
             </div>
             
             <div className="border-t border-gray-700 pt-8">
-              <div className="text-center mb-6">
+              <div className="text-center">
                 <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit animate-float">
                   <Sparkles className="w-12 h-12 text-red-500" />
                 </div>
-                <CardTitle className="text-white text-2xl mb-4">All Performance Types Welcome</CardTitle>
-                <CardDescription className="text-gray-400 leading-relaxed">
-                  Whether you're a magician creating mind-blowing moments, a comedian delivering perfect punchlines, 
-                  or a juggler showcasing incredible skills, we know how to capture and amplify what makes your 
-                  performance special. Our team understands the art of timing, audience engagement, and the magic 
-                  of live entertainment.
+                <CardTitle className="text-white text-2xl mb-4">Built for All Performance Types</CardTitle>
+                <CardDescription className="text-gray-400 leading-relaxed max-w-3xl mx-auto">
+                  Whether you're a magician, comedian, juggler, or any other type of performer, we understand 
+                  the art of timing, audience engagement, and the magic of live entertainment. Our team knows 
+                  how to capture and amplify what makes your performance special.
                 </CardDescription>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <h4 className="text-red-500 font-semibold">Content We Create:</h4>
-                  <ul className="space-y-2">
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Highlight reels of your best moments
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Behind-the-scenes content
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Audience reaction compilations
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Tutorial teasers and previews
-                    </li>
-                  </ul>
-                </div>
-                
-                <div className="space-y-3">
-                  <h4 className="text-red-500 font-semibold">Performance Focus:</h4>
-                  <ul className="space-y-2">
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Close-up magic and illusions
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Comedy timing and punchlines
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Juggling and skill demonstrations
-                    </li>
-                    <li className="text-gray-300 text-sm flex items-center">
-                      <div className="w-2 h-2 bg-red-500 rounded-full mr-3 flex-shrink-0"></div>
-                      Interactive challenges and trends
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
           </CardContent>
