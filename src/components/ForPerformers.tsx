@@ -9,10 +9,10 @@ const ForPerformers = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Made by a <span className="gradient-text">Viral Performer</span> for Performers
+            By Performers. <span className="gradient-text">For Performers.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Led by someone who knows exactly what it takes to go viral and understands the unique needs of live performers.
+            Led by a team who knows exactly what it takes to go viral and understands the unique needs of live performers.
           </p>
         </div>
         
@@ -22,20 +22,21 @@ const ForPerformers = () => {
               <div className="flex-shrink-0">
                 <img 
                   src="/lovable-uploads/19665d13-e164-4d8a-aabc-6a25914bf894.png" 
-                  alt="Bennet Santora - The Fly Juggler" 
+                  alt="Bennett Santora - The Fly Juggler" 
                   className="w-48 h-48 object-cover rounded-lg shadow-lg"
                 />
               </div>
               
               <div className="flex-1 space-y-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Bennet Santora</h3>
-                  <p className="text-red-500 font-semibold text-lg">The Fly Juggler</p>
+                  <p className="text-red-500 font-semibold text-lg">Bennett Santora, aka</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">Fly Juggler</h3>
+                  
                 </div>
                 
                 <p className="text-gray-300 leading-relaxed">
-                  Fly Media was co-founded and is operated by Bennet Santora, better known as the Fly Juggler. 
-                  As a performer himself with over 1 million followers across platforms, Bennet understands the 
+                  Fly Media is co-founded and operated by Bennett Santora, better known as the Fly Juggler. 
+                  As a performer himself with over 1 million followers across platforms, Bennett understands the 
                   unique challenges of creating viral content that showcases your talent while building a loyal audience.
                 </p>
                 
@@ -50,7 +51,7 @@ const ForPerformers = () => {
                     className="inline-flex items-center"
                   >
                     <Instagram className="mr-2 w-5 h-5" />
-                    Follow @flyjuggler
+                    374K+ on Instagram
                   </a>
                 </Button>
               </div>
