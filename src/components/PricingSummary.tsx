@@ -73,22 +73,22 @@ const PricingSummary = () => {
           ))}
         </div>
 
-        <div className="text-center">
+        <div className="flex justify-center">
           <Button 
             asChild
             size="lg" 
-            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow"
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto max-w-sm"
           >
-            <Link to="/pricing">
+            <Link to="/pricing" className="flex items-center justify-center">
               <ArrowRight className="mr-2" size={20} />
               View Full Pricing Details
             </Link>
           </Button>
-          
-          <p className="text-gray-400 mt-4 text-sm">
-            All plans include unlimited cloud storage, monthly analytics, and 0% booking commission
-          </p>
         </div>
+        
+        <p className="text-gray-400 mt-4 text-sm text-center">
+          All plans include unlimited cloud storage, monthly analytics, and 0% booking commission
+        </p>
       </div>
     </section>
   );
