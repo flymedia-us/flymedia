@@ -21,8 +21,6 @@ const Pricing = () => {
         "• YouTube",
         "• Instagram", 
         "• TikTok",
-        "• Facebook",
-        "• Snapchat",
         "We reinvest platform payouts"
       ],
       popular: false,
@@ -39,7 +37,7 @@ const Pricing = () => {
         "0% booking commission",
         "Unlimited cloud storage",
         "Monthly analytics report",
-        "Core platforms:",
+        "Expanded platforms:",
         "• YouTube",
         "• Instagram",
         "• TikTok", 
@@ -85,13 +83,10 @@ const Pricing = () => {
   ];
 
   const addOns = [
-    { name: "Custom Thumbnails", price: "$249/month", description: "Custom thumbnails for each video" },
-    { name: "Profile Optimization", price: "$100/month", description: "Including verification badge" },
-    { name: "LinkedIn Posting", price: "$100/month", description: "Add LinkedIn to your platforms" },
-    { name: "Threads Posting", price: "$100/month", description: "Add Threads to your platforms" },
-    { name: "Bluesky Posting", price: "$100/month", description: "Add Bluesky to your platforms" },
-    { name: "X (Twitter) Posting", price: "$100/month", description: "Add X (Twitter) to your platforms" },
-    { name: "Reddit Posting", price: "$100/month", description: "Add Reddit to your platforms" }
+    { name: "Custom Thumbnails", price: "$249/month", description: "Hand-made thumbnails for each video" },
+    { name: "Profile Optimization", price: "$100/month", description: "Includes blue-check verification badge" },
+    { name: "Add 1 Extra Platform", price: "$100/month", description: "Pick one extra platform to cross-post" },
+    { name: "Add 5 Extra Platforms", price: "$400/month", description: "LinkedIn, Threads, Bluesky, X, and Reddit" }
   ];
 
   return (
