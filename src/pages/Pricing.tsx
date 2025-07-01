@@ -24,6 +24,7 @@ const Pricing = () => {
         "We reinvest platform payouts"
       ],
       popular: false,
+      value: false,
       gradient: "from-blue-600/20 to-purple-600/20"
     },
     {
@@ -46,6 +47,7 @@ const Pricing = () => {
         "Platform rewards split 50-50"
       ],
       popular: true,
+      value: false,
       gradient: "from-red-600/20 to-orange-600/20"
     },
     {
@@ -78,6 +80,7 @@ const Pricing = () => {
         "Automatic comments"
       ],
       popular: false,
+      value: true,
       gradient: "from-yellow-600/20 to-amber-600/20"
     }
   ];
@@ -113,11 +116,16 @@ const Pricing = () => {
             {plans.map((plan, index) => (
               <Card 
                 key={index} 
-                className={`dynamic-card relative overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-red-500' : ''}`}
+                className={`dynamic-card relative overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-red-500' : ''} ${plan.value ? 'ring-2 ring-yellow-400' : ''}`}
               >
                 {plan.popular && (
-                  <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-red-600 to-orange-600 text-white text-center py-2 text-sm font-semibold">
+                  <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-red-600 to-orange-600 text-white text-center py-2 text-sm font-semibold z-20">
                     MOST POPULAR
+                  </div>
+                )}
+                {plan.value && (
+                  <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-black text-center py-2 text-sm font-semibold z-20" style={{top: plan.popular ? '2.5rem' : 0}}>
+                    BEST VALUE
                   </div>
                 )}
                 

@@ -10,14 +10,14 @@ const PricingSummary = () => {
       name: "Basic",
       icon: <Zap className="w-6 h-6 text-blue-500" />,
       price: "$749",
-      description: "3x edited videos/week, expandable platforms",
+      description: "3x edited videos/week, core platforms",
       gradient: "from-blue-600/20 to-purple-600/20"
     },
     {
       name: "Growth",
       icon: <Star className="w-6 h-6 text-red-500" />,
       price: "$1,499",
-      description: "7x edited videos/week, expandable platforms",
+      description: "7x edited videos/week, expanded platforms",
       gradient: "from-red-600/20 to-orange-600/20",
       popular: true
     },
