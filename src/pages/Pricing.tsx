@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, Star, Zap, Crown, Calendar, Mail } from 'lucide-react';
+import { Check, Star, Zap, Crown, Calendar, Mail, Plus } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -86,6 +86,16 @@ const Pricing = () => {
     }
   ];
 
+  const addOns = [
+    { name: "Custom Thumbnails", price: "$249/month", description: "Custom thumbnails for each video" },
+    { name: "Profile Optimization", price: "$100/month", description: "Including verification badge" },
+    { name: "LinkedIn Posting", price: "$100/month", description: "Add LinkedIn to your platforms" },
+    { name: "Threads Posting", price: "$100/month", description: "Add Threads to your platforms" },
+    { name: "Bluesky Posting", price: "$100/month", description: "Add Bluesky to your platforms" },
+    { name: "X (Twitter) Posting", price: "$100/month", description: "Add X (Twitter) to your platforms" },
+    { name: "Reddit Posting", price: "$100/month", description: "Add Reddit to your platforms" }
+  ];
+
   return (
     <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden fixed left-0 right-0 top-0 bottom-0">
       {/* Floating orbs */}
@@ -154,6 +164,43 @@ const Pricing = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Add-ons Section */}
+          <div className="mt-16 max-w-7xl mx-auto">
+            <Card className="dynamic-card relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-50"></div>
+              
+              <CardHeader className="relative z-10 text-center pb-6">
+                <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
+                  <Plus className="w-8 h-8 text-purple-500" />
+                </div>
+                <CardTitle className="text-white text-3xl mb-2">Optional Add-ons</CardTitle>
+                <CardDescription className="text-gray-300 text-lg">
+                  Available for Basic and Growth plans • Included FREE with Pro plan
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent className="relative z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                  {addOns.map((addOn, index) => (
+                    <div key={index} className="bg-black/20 rounded-lg p-4 border border-white/10">
+                      <div className="text-center">
+                        <h4 className="text-white font-semibold text-sm mb-1">{addOn.name}</h4>
+                        <p className="text-purple-400 font-bold text-lg mb-2">{addOn.price}</p>
+                        <p className="text-gray-400 text-xs">{addOn.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 text-center">
+                  <p className="text-gray-400 text-sm">
+                    <span className="text-yellow-500 font-semibold">Pro Plan</span> includes all add-ons at no extra cost
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="flex justify-center mt-10">
