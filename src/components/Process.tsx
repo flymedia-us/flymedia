@@ -68,7 +68,7 @@ const Process = () => {
         
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full">
-            <span className="text-red-400 font-medium">⚡ Post up to 14x per week</span>
+            <span className="text-red-400 font-medium">⚡ Brand new post every single day</span>
           </div>
         </div>
       </div>
