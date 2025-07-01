@@ -57,7 +57,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
-              onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
+              onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
             >
               <Calendar className="mr-2" size={20} />
               Book a Complimentary Call

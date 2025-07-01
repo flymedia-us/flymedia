@@ -26,7 +26,7 @@ const CTA = () => {
           <Button 
             className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-2xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
             size="lg"
-            onClick={() => window.open('https://calendar.app.google/PRzwkEYHEnnaJbFR8', '_blank')}
+            onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
           >
             <Calendar className="mr-3 w-7 h-7" />
             Book Discovery Call

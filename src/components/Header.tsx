@@ -37,7 +37,7 @@ const Header = () => {
               Contact
             </Link>
             <Button asChild className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
-              <a href="https://calendar.app.google/PRzwkEYHEnnaJbFR8" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendar.app.google/SwCqN1pHeeAcU2ev7" target="_blank" rel="noopener noreferrer">
                 Get Started
               </a>
             </Button>
@@ -60,7 +60,7 @@ const Header = () => {
               <Link to="/clients" className="text-gray-300 hover:text-red-500 transition-colors">Clients</Link>
               <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
               <Button asChild className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
-                <a href="https://calendar.app.google/PRzwkEYHEnnaJbFR8" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendar.app.google/SwCqN1pHeeAcU2ev7" target="_blank" rel="noopener noreferrer">
                   Get Started
                 </a>
               </Button>
