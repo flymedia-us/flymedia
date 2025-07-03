@@ -74,40 +74,44 @@ const Clients = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl mx-auto">
             {clients.map((client, index) => (
-              <Card key={index} className="dynamic-card h-full animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="aspect-square w-full overflow-hidden rounded-t-lg mb-4">
-                  <img 
-                    src={client.image} 
-                    alt={client.name}
-                    className="w-full h-full object-cover"
-                  />
+              <Card key={index} className="dynamic-card h-full">
+                <div className="flex flex-col md:flex-row h-full">
+                  <div className="md:w-1/2 aspect-square md:aspect-auto overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
+                    <img 
+                      src={client.image} 
+                      alt={client.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="md:w-1/2 flex flex-col">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <CardTitle className="text-white text-xl">{client.name}</CardTitle>
+                        <div className={`px-2 py-1 rounded-full text-xs font-semibold ${
+                          client.status === 'Current Client' 
+                            ? 'bg-green-600/20 text-green-400 border border-green-600/30' 
+                            : 'bg-blue-600/20 text-blue-400 border border-blue-600/30'
+                        }`}>
+                          {client.status}
+                        </div>
+                      </div>
+                      <CardDescription className="text-gray-400 text-sm">
+                        {client.description}
+                      </CardDescription>
+                    </CardHeader>
+                    
+                    <CardContent className="pt-4 border-t border-gray-700 flex-grow">
+                      <div className="flex items-start space-x-3">
+                        <Star className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
+                        <p className="text-gray-300 text-sm leading-relaxed">
+                          {client.highlight}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </div>
                 </div>
-                <CardHeader className="pb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <CardTitle className="text-white text-xl">{client.name}</CardTitle>
-                    <div className={`px-2 py-1 rounded-full text-xs font-semibold ${
-                      client.status === 'Current Client' 
-                        ? 'bg-green-600/20 text-green-400 border border-green-600/30' 
-                        : 'bg-blue-600/20 text-blue-400 border border-blue-600/30'
-                    }`}>
-                      {client.status}
-                    </div>
-                  </div>
-                  <CardDescription className="text-gray-400 text-sm">
-                    {client.description}
-                  </CardDescription>
-                </CardHeader>
-                
-                <CardContent className="pt-4 border-t border-gray-700">
-                  <div className="flex items-start space-x-3">
-                    <Star className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                    <p className="text-gray-300 text-sm leading-relaxed">
-                      {client.highlight}
-                    </p>
-                  </div>
-                </CardContent>
               </Card>
             ))}
           </div>

@@ -1,7 +1,10 @@
 
 import { Card } from '@/components/ui/card';
+import { useEffect, useRef } from 'react';
 
 const ClientsCarousel = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   const clients = [
     {
       name: "The Passing Zone",
@@ -29,6 +32,26 @@ const ClientsCarousel = () => {
     }
   ];
 
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let scrollAmount = 0;
+    const scrollStep = 1;
+    const scrollDelay = 30;
+
+    const scroll = () => {
+      scrollAmount += scrollStep;
+      if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+        scrollAmount = 0;
+      }
+      scrollContainer.scrollLeft = scrollAmount;
+    };
+
+    const interval = setInterval(scroll, scrollDelay);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto">
@@ -41,10 +64,15 @@ const ClientsCarousel = () => {
           </p>
         </div>
         
-        <div className="overflow-x-auto">
-          <div className="flex space-x-6 pb-4" style={{ width: 'max-content' }}>
-            {clients.map((client, index) => (
-              <Card key={index} className="dynamic-card flex-shrink-0 w-64 animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
+        <div 
+          ref={scrollRef}
+          className="overflow-x-hidden"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <div className="flex space-x-6" style={{ width: 'max-content' }}>
+            {/* Duplicate clients array for seamless loop */}
+            {[...clients, ...clients].map((client, index) => (
+              <Card key={index} className="dynamic-card flex-shrink-0 w-64">
                 <div className="aspect-square w-full overflow-hidden rounded-t-lg">
                   <img 
                     src={client.image} 
