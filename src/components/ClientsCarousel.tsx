@@ -8,27 +8,27 @@ const ClientsCarousel = () => {
   const clients = [
     {
       name: "The Passing Zone",
-      image: "/lovable-uploads/f5989665-4fdd-42cd-961b-0d4df3f0c2fe.png"
+      image: "/lovable-uploads/The Passing Zone.jpg"
     },
     {
       name: "Bernini Magic", 
-      image: "/lovable-uploads/b1ccd2b5-a22c-4387-927d-c3b8e653fc8f.png"
+      image: "/lovable-uploads/Bernini Magic.jpg"
     },
     {
       name: "Magical Bones",
-      image: "/lovable-uploads/d1aba56a-5fc8-499f-94ee-2b54301bfe47.png"
+      image: "/lovable-uploads/Magical Bones.jpg"
     },
     {
       name: "The Mind Noodler",
-      image: "/lovable-uploads/e8977bce-cd51-4909-ad6e-4269c557ea5f.png"
+      image: "/lovable-uploads/The Mind Noodler.jpg"
     },
     {
       name: "Vinny Grosso",
-      image: "/lovable-uploads/fb2d5ebb-a129-4f96-ae30-3b2930845b46.png"
+      image: "/lovable-uploads/Vinny Grosso.jpg"
     },
     {
       name: "Judge Mentalist",
-      image: "/lovable-uploads/dfe7a9a3-6658-440d-8031-02128dce36c5.png"
+      image: "/lovable-uploads/Judge Mentalist.jpg"
     }
   ];
 

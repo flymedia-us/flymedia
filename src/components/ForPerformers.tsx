@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Sparkles, Instagram } from 'lucide-react';
+import { siInstagram, siTiktok } from 'simple-icons/icons';
 
 const ForPerformers = () => {
   return (
@@ -40,36 +39,47 @@ const ForPerformers = () => {
                   unique challenges of creating viral content that showcases your talent while building a loyal audience.
                 </p>
                 
-                <Button 
-                  asChild 
-                  className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white"
-                >
-                  <a 
-                    href="https://www.instagram.com/flyjuggler/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center"
+                <div className="flex flex-wrap gap-4 mt-4">
+                  <Button 
+                    asChild 
+                    className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white"
                   >
-                    <Instagram className="mr-2 w-5 h-5" />
-                    374K+ on Instagram
-                  </a>
-                </Button>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-700 pt-8">
-              <div className="text-center">
-                <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit animate-float">
-                  <Sparkles className="w-12 h-12 text-red-500" />
+                    <a 
+                      href="https://www.instagram.com/flyjuggler/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center"
+                    >
+                      <span className="mr-2 w-5 h-5 flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" width={20} height={20} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path d={siInstagram.path} />
+                        </svg>
+                      </span>
+                      375K+ on Instagram
+                    </a>
+                  </Button>
+                  <Button 
+                    asChild 
+                    className="bg-[#010101] hover:bg-[#161616] text-white border border-[#25F4EE]"
+                  >
+                    <a 
+                      href="https://www.tiktok.com/@flyjuggler" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center"
+                    >
+                      <span className="mr-2 w-5 h-5 flex items-center justify-center">
+                        <svg viewBox="0 0 24 24" width={20} height={20} fill="white" xmlns="http://www.w3.org/2000/svg">
+                          <path d={siTiktok.path} />
+                        </svg>
+                      </span>
+                      250K+ on TikTok
+                    </a>
+                  </Button>
                 </div>
-                <CardTitle className="text-white text-2xl mb-4">Built for All Performance Types</CardTitle>
-                <CardDescription className="text-gray-400 leading-relaxed max-w-3xl mx-auto">
-                  Whether you're a magician, comedian, juggler, or any other type of performer, we understand 
-                  the art of timing, audience engagement, and the magic of live entertainment. Our team knows 
-                  how to capture and amplify what makes your performance special.
-                </CardDescription>
               </div>
             </div>
+
           </CardContent>
         </Card>
       </div>
