@@ -21,7 +21,7 @@ const ForPerformers = () => {
             <div className="flex flex-col lg:flex-row items-center gap-8 mb-8">
               <div className="flex-shrink-0">
                 <img 
-                  src="/lovable-uploads/19665d13-e164-4d8a-aabc-6a25914bf894.png" 
+                  src="/lovable-uploads/Fly Juggler.png" 
                   alt="Bennett Santora - The Fly Juggler" 
                   className="w-48 h-48 object-cover rounded-lg shadow-lg"
                 />
