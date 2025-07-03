@@ -3,6 +3,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Star } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { siInstagram } from 'simple-icons/icons';
 
 const Clients = () => {
   const clients = [
@@ -11,42 +13,54 @@ const Clients = () => {
       status: "Former Client",
       description: "Comedy juggling duo known for their high-energy performances and television appearances.",
       highlight: "Helped amplify their viral comedy juggling content across multiple platforms",
-      image: "/lovable-uploads/The Passing Zone.jpg"
+      image: "/lovable-uploads/The Passing Zone.jpg",
+      instagram: "https://www.instagram.com/thepassingzone/reels/",
+      instagramLabel: "@thepassingzone"
     },
     {
       name: "Bernini Magic",
       status: "Current Client", 
       description: "Professional magician specializing in close-up magic and mentalism performances.",
       highlight: "Created engaging content showcasing mind-bending illusions and audience reactions",
-      image: "/lovable-uploads/Bernini Magic.jpg"
+      image: "/lovable-uploads/Bernini Magic.jpg",
+      instagram: "https://www.instagram.com/berninimagic/reels/",
+      instagramLabel: "@berninimagic"
     },
     {
       name: "Magical Bones",
       status: "Current Client",
       description: "Dynamic performer combining magic with theatrical storytelling and character work.",
       highlight: "Developed viral content highlighting unique magical performances and character development",
-      image: "/lovable-uploads/Magical Bones.jpg"
+      image: "/lovable-uploads/Magical Bones.jpg",
+      instagram: "https://www.instagram.com/magicalbones/reels/",
+      instagramLabel: "@magicalbones"
     },
     {
       name: "The Mind Noodler",
       status: "Current Client", 
       description: "Mentalist and mind reader creating interactive experiences for live and digital audiences.",
       highlight: "Crafted compelling content showcasing incredible mentalism and audience participation",
-      image: "/lovable-uploads/The Mind Noodler.jpg"
+      image: "/lovable-uploads/The Mind Noodler.jpg",
+      instagram: "https://www.instagram.com/mindnoodler/reels/",
+      instagramLabel: "@mindnoodler"
     },
     {
       name: "Vinny Grosso",
       status: "Current Client",
       description: "Multi-talented performer blending comedy, magic, and audience interaction.",
       highlight: "Built engaging social media presence through creative performance content",
-      image: "/lovable-uploads/Vinny Grosso.jpg"
+      image: "/lovable-uploads/Vinny Grosso.jpg",
+      instagram: "https://www.instagram.com/vinnygrosso/reels/",
+      instagramLabel: "@vinnygrosso"
     },
     {
       name: "Judge Mentalist",
       status: "Current Client",
       description: "Professional mentalist and performer known for incredible mind-reading abilities.",
       highlight: "Enhanced online presence with captivating mentalism content and audience engagement",
-      image: "/lovable-uploads/Judge Mentalist.jpg"
+      image: "/lovable-uploads/Judge Mentalist.jpg",
+      instagram: "https://www.instagram.com/psychicish/reels/",
+      instagramLabel: "@psychicish"
     }
   ];
 
@@ -101,14 +115,33 @@ const Clients = () => {
                         {client.description}
                       </CardDescription>
                     </CardHeader>
-                    
-                    <CardContent className="pt-4 border-t border-gray-700 flex-grow">
+                    <CardContent className="pt-4 border-t border-gray-700 flex-grow flex flex-col gap-4">
                       <div className="flex items-start space-x-3">
                         <Star className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                         <p className="text-gray-300 text-sm leading-relaxed">
                           {client.highlight}
                         </p>
                       </div>
+                      {client.instagram && (
+                        <Button 
+                          asChild 
+                          className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white mt-2"
+                        >
+                          <a 
+                            href={client.instagram} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center"
+                          >
+                            <span className="mr-2 w-5 h-5 flex items-center justify-center">
+                              <svg viewBox="0 0 24 24" width={20} height={20} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d={siInstagram.path} />
+                              </svg>
+                            </span>
+                            {client.instagramLabel}
+                          </a>
+                        </Button>
+                      )}
                     </CardContent>
                   </div>
                 </div>

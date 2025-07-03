@@ -1,5 +1,8 @@
 
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
 
 const ClientsCarousel = () => {
@@ -88,6 +91,19 @@ const ClientsCarousel = () => {
               ))}
             </div>
           </div>
+        </div>
+        {/* Button to Clients page */}
+        <div className="flex justify-center mt-10">
+          <Button 
+            asChild
+            size="lg" 
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto max-w-sm"
+          >
+            <Link to="/clients" className="flex items-center justify-center">
+              <ArrowRight className="mr-2" size={20} />
+              Meet Our Clients
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
