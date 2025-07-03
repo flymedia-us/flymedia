@@ -63,28 +63,30 @@ const ClientsCarousel = () => {
             Join the ranks of successful performers who've transformed their social media presence
           </p>
         </div>
-        
-        <div 
-          ref={scrollRef}
-          className="overflow-x-hidden"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          <div className="flex space-x-6" style={{ width: 'max-content' }}>
-            {/* Duplicate clients array for seamless loop */}
-            {[...clients, ...clients].map((client, index) => (
-              <Card key={index} className="dynamic-card flex-shrink-0 w-64">
-                <div className="aspect-square w-full overflow-hidden rounded-t-lg">
-                  <img 
-                    src={client.image} 
-                    alt={client.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-white text-lg font-semibold text-center">{client.name}</h3>
-                </div>
-              </Card>
-            ))}
+        {/* Add extra margin above carousel to prevent card cutoff on hover */}
+        <div className="mt-10">
+          <div 
+            ref={scrollRef}
+            className="overflow-x-hidden"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            <div className="flex space-x-6" style={{ width: 'max-content' }}>
+              {/* Duplicate clients array for seamless loop */}
+              {[...clients, ...clients].map((client, index) => (
+                <Card key={index} className="dynamic-card flex-shrink-0 w-64">
+                  <div className="aspect-square w-full overflow-hidden rounded-t-lg">
+                    <img 
+                      src={client.image} 
+                      alt={client.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-white text-lg font-semibold text-center">{client.name}</h3>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
