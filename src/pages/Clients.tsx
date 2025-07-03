@@ -10,31 +10,43 @@ const Clients = () => {
       name: "The Passing Zone",
       status: "Former Client",
       description: "Comedy juggling duo known for their high-energy performances and television appearances.",
-      highlight: "Helped amplify their viral comedy juggling content across multiple platforms"
+      highlight: "Helped amplify their viral comedy juggling content across multiple platforms",
+      image: "/lovable-uploads/f5989665-4fdd-42cd-961b-0d4df3f0c2fe.png"
     },
     {
       name: "Bernini Magic",
       status: "Current Client", 
       description: "Professional magician specializing in close-up magic and mentalism performances.",
-      highlight: "Created engaging content showcasing mind-bending illusions and audience reactions"
+      highlight: "Created engaging content showcasing mind-bending illusions and audience reactions",
+      image: "/lovable-uploads/b1ccd2b5-a22c-4387-927d-c3b8e653fc8f.png"
     },
     {
       name: "Magical Bones",
       status: "Current Client",
       description: "Dynamic performer combining magic with theatrical storytelling and character work.",
-      highlight: "Developed viral content highlighting unique magical performances and character development"
+      highlight: "Developed viral content highlighting unique magical performances and character development",
+      image: "/lovable-uploads/d1aba56a-5fc8-499f-94ee-2b54301bfe47.png"
     },
     {
       name: "The Mind Noodler",
       status: "Current Client", 
       description: "Mentalist and mind reader creating interactive experiences for live and digital audiences.",
-      highlight: "Crafted compelling content showcasing incredible mentalism and audience participation"
+      highlight: "Crafted compelling content showcasing incredible mentalism and audience participation",
+      image: "/lovable-uploads/e8977bce-cd51-4909-ad6e-4269c557ea5f.png"
     },
     {
       name: "Vinny Grosso",
       status: "Current Client",
       description: "Multi-talented performer blending comedy, magic, and audience interaction.",
-      highlight: "Built engaging social media presence through creative performance content"
+      highlight: "Built engaging social media presence through creative performance content",
+      image: "/lovable-uploads/fb2d5ebb-a129-4f96-ae30-3b2930845b46.png"
+    },
+    {
+      name: "Judge Mentalist",
+      status: "Current Client",
+      description: "Professional mentalist and performer known for incredible mind-reading abilities.",
+      highlight: "Enhanced online presence with captivating mentalism content and audience engagement",
+      image: "/lovable-uploads/dfe7a9a3-6658-440d-8031-02128dce36c5.png"
     }
   ];
 
@@ -49,7 +61,7 @@ const Clients = () => {
       
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 animate-slide-up">
             <div className="mx-auto mb-6 p-4 bg-black/30 rounded-full w-fit animate-float">
               <Users className="w-12 h-12 text-red-500" />
             </div>
@@ -64,7 +76,14 @@ const Clients = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {clients.map((client, index) => (
-              <Card key={index} className="dynamic-card h-full">
+              <Card key={index} className="dynamic-card h-full animate-slide-up" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="aspect-square w-full overflow-hidden rounded-t-lg mb-4">
+                  <img 
+                    src={client.image} 
+                    alt={client.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-2">
                     <CardTitle className="text-white text-xl">{client.name}</CardTitle>

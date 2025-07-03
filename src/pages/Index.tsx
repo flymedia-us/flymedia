@@ -1,6 +1,7 @@
 
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ClientsCarousel from '@/components/ClientsCarousel';
 import Services from '@/components/Services';
 import ForPerformers from '@/components/ForPerformers';
 import PricingSummary from '@/components/PricingSummary';
@@ -18,6 +19,7 @@ const Index = () => {
       
       <Header />
       <Hero />
+      <ClientsCarousel />
       <Services />
       <ForPerformers />
       <PricingSummary />
