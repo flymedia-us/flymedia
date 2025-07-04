@@ -14,13 +14,13 @@ const Process = () => {
       icon: <Edit3 className="w-8 h-8 text-red-500" />,
       step: "02", 
       title: "We Work Our Magic",
-      description: "Our team edits, optimizes, and creates multiple versions tailored for each platform's unique algorithm and audience preferences."
+      description: "Our team picks out the best moments from your performances, then edits and optimizes each clip to be perfect for social media."
     },
     {
       icon: <Rocket className="w-8 h-8 text-red-500" />,
       step: "03",
       title: "Cross-Platform Launch",
-      description: "We simultaneously post across TikTok, Instagram Reels, YouTube Shorts, Twitter, and Facebook at optimal times for maximum reach."
+      description: "We simultaneously post across YouTube, TikTok, Instagram, Facebook, and Snapchat at optimal times for maximum reach."
     },
     {
       icon: <BarChart className="w-8 h-8 text-red-500" />,
@@ -68,7 +68,7 @@ const Process = () => {
         
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full">
-            <span className="text-red-400 font-medium">⚡ Brand new post every single day</span>
+            <span className="text-red-400 font-medium">⚡ New posts every day</span>
           </div>
         </div>
       </div>

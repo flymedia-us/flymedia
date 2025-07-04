@@ -12,7 +12,7 @@ const Services = () => {
     {
       icon: <Share2 className="w-8 h-8 text-red-500" />,
       title: "Multi-Platform Cross-Posting",
-      description: "Maximize your reach with simultaneous posting across TikTok, Instagram, YouTube, Facebook, and Snapchat; standard on all plans."
+      description: "Maximize your reach with simultaneous posting across YouTube, TikTok, Instagram, Facebook, Snapchat, and more."
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-red-500" />,
@@ -21,13 +21,13 @@ const Services = () => {
     },
     {
       icon: <Zap className="w-8 h-8 text-red-500" />,
-      title: "Rapid Turnaround",
-      description: "From raw footage to published content in 24-48 hours. Strike while the iron is hot with trending topics."
+      title: "Rapid Turnaround & Revisions",
+      description: "From raw footage to published content in just one week. That leaves time for revisions to perfect each clip."
     },
     {
       icon: <Globe className="w-8 h-8 text-red-500" />,
       title: "Audience Growth",
-      description: "Targeted growth strategies to build your fanbase across all platforms and convert viewers into loyal followers."
+      description: "Targeted growth strategies to build your fan base across all platforms and convert viewers into loyal followers."
     },
     {
       icon: <BarChart3 className="w-8 h-8 text-red-500" />,
