@@ -9,6 +9,69 @@ import { siInstagram } from 'simple-icons/icons';
 const Clients = () => {
   const clients = [
     {
+      name: "Bernini Magic",
+      status: "Current Client", 
+      description: "Professional magician specializing in close-up magic and mentalism performances.",
+      highlight: "Create engaging content showcasing mind-bending illusions and audience reactions",
+      image: "/lovable-uploads/Bernini Magic.jpg",
+      instagram: "https://www.instagram.com/berninimagic/reels/",
+      instagramLabel: "@berninimagic"
+    },
+    {
+      name: "The Mind Noodler",
+      status: "Current Client", 
+      description: "Mentalist and mind reader creating interactive experiences for live and digital audiences.",
+      highlight: "Craft compelling content showcasing incredible mentalism and audience participation",
+      image: "/lovable-uploads/The Mind Noodler.jpg",
+      instagram: "https://www.instagram.com/mindnoodler/reels/",
+      instagramLabel: "@mindnoodler"
+    },
+    {
+      name: "Vinny Grosso",
+      status: "Current Client",
+      description: "Multi-talented performer blending comedy, magic, and audience interaction.",
+      highlight: "Build engaging social media presence through creative performance content",
+      image: "/lovable-uploads/Vinny Grosso.jpg",
+      instagram: "https://www.instagram.com/vinnygrosso/reels/",
+      instagramLabel: "@vinnygrosso"
+    },
+    {
+      name: "Judge Mentalist",
+      status: "Current Client",
+      description: "Professional mentalist and performer known for incredible mind-reading abilities.",
+      highlight: "Enhance online presence with captivating mentalism content and audience engagement",
+      image: "/lovable-uploads/Judge Mentalist.jpg",
+      instagram: "https://www.instagram.com/psychicish/reels/",
+      instagramLabel: "@psychicish"
+    },
+    {
+      name: "Riccardo Berdini",
+      status: "Current Client",
+      description: "Award-winning magician and mentalist known for cinematic storytelling and mind-blowing illusions.",
+      highlight: "Produce cinematic content to showcase Riccardo's unique blend of magic and narrative.",
+      image: "/lovable-uploads/Riccardo Berdini.jpg",
+      instagram: "https://www.instagram.com/riccardoberdini/reels/",
+      instagramLabel: "@riccardoberdini"
+    },
+    {
+      name: "Stunt Magician",
+      status: "Current Client",
+      description: "Extreme illusionist performing daring stunts and high-impact magic for live and digital audiences.",
+      highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
+      image: "/lovable-uploads/Stunt Magician.jpg",
+      instagram: "https://www.instagram.com/stuntmagician/reels/",
+      instagramLabel: "@stuntmagician"
+    },
+    {
+      name: "Nathan Coe Marsh",
+      status: "Current Client",
+      description: "Acclaimed magician and entertainer specializing in interactive and innovative performances.",
+      highlight: "Help Nathan connect with new audiences through creative, interactive social content.",
+      image: "/lovable-uploads/Nathan Coe Marsh.jpg",
+      instagram: "https://www.instagram.com/nathan_coe_marsh/reels/",
+      instagramLabel: "@nathan_coe_marsh"
+    },
+    {
       name: "The Passing Zone",
       status: "Former Client",
       description: "Comedy juggling duo known for their high-energy performances and television appearances.",
@@ -18,49 +81,13 @@ const Clients = () => {
       instagramLabel: "@thepassingzone"
     },
     {
-      name: "Bernini Magic",
-      status: "Current Client", 
-      description: "Professional magician specializing in close-up magic and mentalism performances.",
-      highlight: "Created engaging content showcasing mind-bending illusions and audience reactions",
-      image: "/lovable-uploads/Bernini Magic.jpg",
-      instagram: "https://www.instagram.com/berninimagic/reels/",
-      instagramLabel: "@berninimagic"
-    },
-    {
       name: "Magical Bones",
-      status: "Current Client",
+      status: "Former Client",
       description: "Dynamic performer combining magic with theatrical storytelling and character work.",
       highlight: "Developed viral content highlighting unique magical performances and character development",
       image: "/lovable-uploads/Magical Bones.jpg",
       instagram: "https://www.instagram.com/magicalbones/reels/",
       instagramLabel: "@magicalbones"
-    },
-    {
-      name: "The Mind Noodler",
-      status: "Current Client", 
-      description: "Mentalist and mind reader creating interactive experiences for live and digital audiences.",
-      highlight: "Crafted compelling content showcasing incredible mentalism and audience participation",
-      image: "/lovable-uploads/The Mind Noodler.jpg",
-      instagram: "https://www.instagram.com/mindnoodler/reels/",
-      instagramLabel: "@mindnoodler"
-    },
-    {
-      name: "Vinny Grosso",
-      status: "Current Client",
-      description: "Multi-talented performer blending comedy, magic, and audience interaction.",
-      highlight: "Built engaging social media presence through creative performance content",
-      image: "/lovable-uploads/Vinny Grosso.jpg",
-      instagram: "https://www.instagram.com/vinnygrosso/reels/",
-      instagramLabel: "@vinnygrosso"
-    },
-    {
-      name: "Judge Mentalist",
-      status: "Current Client",
-      description: "Professional mentalist and performer known for incredible mind-reading abilities.",
-      highlight: "Enhanced online presence with captivating mentalism content and audience engagement",
-      image: "/lovable-uploads/Judge Mentalist.jpg",
-      instagram: "https://www.instagram.com/psychicish/reels/",
-      instagramLabel: "@psychicish"
     }
   ];
 
