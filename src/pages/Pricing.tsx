@@ -21,7 +21,7 @@ const Pricing = () => {
         "• YouTube",
         "• Instagram", 
         "• TikTok",
-        "We reinvest platform payouts"
+        "Platform rewards split 50-50"
       ],
       popular: false,
       value: false,
@@ -34,7 +34,7 @@ const Pricing = () => {
       period: "/month",
       description: "For the rising star and regular performer ready to dominate social media",
       features: [
-        "7x edited videos/week",
+        "5x edited videos/week",
         "0% booking commission",
         "Unlimited cloud storage",
         "Monthly analytics report",
@@ -44,7 +44,8 @@ const Pricing = () => {
         "• TikTok", 
         "• Facebook",
         "• Snapchat",
-        "Platform rewards split 50-50"
+        "You earn 70% platform rewards",
+        "Custom thumbnails for videos"
       ],
       popular: true,
       value: false,
@@ -53,7 +54,7 @@ const Pricing = () => {
     {
       name: "Pro",
       icon: <Crown className="w-8 h-8 text-yellow-500" />,
-      price: "$1,999",
+      price: "$2,999",
       period: "/month",
       description: "Everything, everywhere. All done for you for maximum viral potential",
       features: [
@@ -67,17 +68,15 @@ const Pricing = () => {
         "• TikTok", 
         "• Facebook",
         "• Snapchat",
-        "• LinkedIn • X • Threads • Bluesky • Reddit",
-        "You keep 100% platform rewards",
-        "All add-ons included at no extra cost",
-        "• Custom thumbnails for all videos",
-        "• Profile optimization for bookings",
-        "Targeted brand strategy",
+        "• Add LinkedIn, X, Threads, Bluesky, Reddit",
+        "You earn 100% platform rewards",
+        "Custom thumbnails for videos",
+        "Profile optimization for conversions",
+        "• Includes blue-check verification badge",
         "Full-service community engagement",
+        "• Automatic comments",
         "• We respond to comments and messages for you",
-        "Personal direct company contact",
-        "Story re-sharing",
-        "Automatic comments"
+        "Weekly strategy calls"
       ],
       popular: false,
       value: true,
@@ -85,12 +84,6 @@ const Pricing = () => {
     }
   ];
 
-  const addOns = [
-    { name: "Custom Thumbnails", price: "$249/month", description: "Hand-made thumbnails for each video" },
-    { name: "Profile Optimization", price: "$100/month", description: "Includes blue-check verification badge" },
-    { name: "Add 1 Extra Platform", price: "$100/month", description: "Pick one extra platform to cross-post" },
-    { name: "Add 5 Extra Platforms", price: "$400/month", description: "LinkedIn, Threads, Bluesky, X, and Reddit" }
-  ];
 
   return (
     <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden fixed left-0 right-0 top-0 bottom-0">
@@ -98,9 +91,7 @@ const Pricing = () => {
       <div className="floating-orb w-96 h-96 top-10 -left-20 animate-float"></div>
       <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{animationDelay: '2s'}}></div>
       <div className="floating-orb w-48 h-48 bottom-20 left-1/4 animate-float" style={{animationDelay: '4s'}}></div>
-      
       <Header />
-      
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-slide-up">
@@ -111,7 +102,6 @@ const Pricing = () => {
               Pick the perfect plan to launch your social media success.
             </p>
           </div>
-          
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
             {plans.map((plan, index) => (
               <Card 
@@ -128,9 +118,7 @@ const Pricing = () => {
                     BEST VALUE
                   </div>
                 )}
-                
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-50`}></div>
-                
                 <CardHeader className="relative z-10 text-center pb-4">
                   <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
                     {plan.icon}
@@ -144,7 +132,6 @@ const Pricing = () => {
                     {plan.description}
                   </CardDescription>
                 </CardHeader>
-                
                 <CardContent className="relative z-10 space-y-6 flex-grow flex flex-col">
                   <ul className="space-y-3 flex-grow text-sm">
                     {plan.features.map((feature, idx) => (
@@ -166,45 +153,7 @@ const Pricing = () => {
               </Card>
             ))}
           </div>
-
-          {/* Add-ons Section */}
-          <div className="mt-16 max-w-7xl mx-auto">
-            <Card className="dynamic-card relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-50"></div>
-              
-              <CardHeader className="relative z-10 text-center pb-6">
-                <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
-                  <Plus className="w-8 h-8 text-purple-500" />
-                </div>
-                <CardTitle className="text-white text-3xl mb-2">Optional Add-ons</CardTitle>
-                <CardDescription className="text-gray-300 text-lg">
-                  Available for Basic and Growth plans • Included FREE with Pro plan
-                </CardDescription>
-              </CardHeader>
-              
-              <CardContent className="relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                  {addOns.map((addOn, index) => (
-                    <div key={index} className="bg-black/20 rounded-lg p-4 border border-white/10">
-                      <div className="text-center">
-                        <h4 className="text-white font-semibold text-sm mb-1">{addOn.name}</h4>
-                        <p className="text-purple-400 font-bold text-lg mb-2">{addOn.price}</p>
-                        <p className="text-gray-400 text-xs">{addOn.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className="mt-6 text-center">
-                  <p className="text-gray-400 text-sm">
-                    <span className="text-yellow-500 font-semibold">Pro Plan</span> includes all add-ons at no extra cost
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-20">
             <Button 
               size="lg" 
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
@@ -214,7 +163,6 @@ const Pricing = () => {
               Book a Complimentary Call
             </Button>
           </div>
-
           <div className="text-center mt-16">
             <p className="text-gray-400 mb-4">Need a custom plan? Have questions?</p>
             <Button 
@@ -231,7 +179,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-      
       <Footer />
     </div>
   );
