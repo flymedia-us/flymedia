@@ -17,15 +17,15 @@ const PricingSummary = () => {
       name: "Growth",
       icon: <Star className="w-6 h-6 text-red-500" />,
       price: "$1,499",
-      description: "7x edited videos/week, expanded platforms",
+      description: "5x edited videos/week, expanded platforms, and thumbnails",
       gradient: "from-red-600/20 to-orange-600/20",
       popular: true
     },
     {
       name: "Pro",
       icon: <Crown className="w-6 h-6 text-yellow-500" />,
-      price: "$1,999",
-      description: "7x videos/week, unlimited platforms and add-ons",
+      price: "$2,999",
+      description: "7x videos/week, unlimited platforms, thumbnails, and more",
       gradient: "from-yellow-600/20 to-amber-600/20"
     }
   ];
