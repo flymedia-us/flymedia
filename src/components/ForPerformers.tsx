@@ -8,7 +8,7 @@ const ForPerformers = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            By Performers. <span className="gradient-text">For Performers.</span>
+            By a team who <span className="gradient-text">knows your needs.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Led by a team of co-founders who know exactly what it takes to go viral and understand the unique needs of live performers.
@@ -30,8 +30,8 @@ const ForPerformers = () => {
                 
                 <div className="flex-1 space-y-3 text-center sm:text-left">
                   <div>
-                    <p className="text-red-500 font-semibold">Bennett Santora, aka</p>
-                    <h3 className="text-xl font-bold text-white">Fly Juggler</h3>
+                    <h3 className="text-xl font-bold text-white">Bennett Santora</h3>
+                    <p className="text-red-500 font-semibold">aka Fly Juggler. Co-Founder & CMO</p>
                   </div>
                   
                   <p className="text-gray-300 text-sm leading-relaxed">
@@ -56,7 +56,7 @@ const ForPerformers = () => {
                             <path d={siInstagram.path} />
                           </svg>
                         </span>
-                        375K+ IG
+                        380K+
                       </a>
                     </Button>
                     <Button 
@@ -75,7 +75,7 @@ const ForPerformers = () => {
                             <path d={siTiktok.path} />
                           </svg>
                         </span>
-                        250K+ TT
+                        250K+
                       </a>
                     </Button>
                   </div>
@@ -92,13 +92,14 @@ const ForPerformers = () => {
                 
                 <div className="flex-1 space-y-3 text-center sm:text-left">
                   <div>
-                    <p className="text-blue-500 font-semibold">Sam Friedman</p>
-                    <h3 className="text-xl font-bold text-white">Co-Founder & CTO</h3>
+
+                    <h3 className="text-xl font-bold text-white">Sam Friedman</h3>
+                    <p className="text-blue-500 font-semibold">Co-Founder & CTO</p>
                   </div>
                   
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Over 10 years of experience in video production and technical background. Sam brings the 
-                    technical expertise to scale viral content creation.
+                    With over 10 years of experience in video production plus a background in tech and working directly with clients, Sam brings the 
+                     expertise to produce and distribute high-quality content.
                   </p>
                 </div>
               </div>
@@ -106,8 +107,8 @@ const ForPerformers = () => {
 
             <div className="text-center pt-4 border-t border-gray-700">
               <p className="text-gray-300 leading-relaxed">
-                Together, Bennett and Sam have created a powerhouse team that combines performer insights with 
-                technical excellence to help entertainers dominate social media and build loyal audiences.
+                Together, Bennett and Sam lead a powerhouse creative team that combines performer insights with 
+                technical excellence to help entertainers like you dominate social media and build loyal audiences.
               </p>
             </div>
           </CardContent>
