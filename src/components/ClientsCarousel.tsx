@@ -66,11 +66,11 @@ const ClientsCarousel = () => {
             Join the ranks of successful performers who've transformed their social media presence
           </p>
         </div>
-        {/* Add extra margin above carousel to prevent card cutoff on hover */}
-        <div className="mt-10">
+        {/* Add extra padding above carousel to prevent card cutoff on hover */}
+        <div className="mt-10 pt-8">
           <div 
             ref={scrollRef}
-            className="overflow-x-hidden"
+            className="overflow-x-hidden py-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             <div className="flex space-x-6" style={{ width: 'max-content' }}>

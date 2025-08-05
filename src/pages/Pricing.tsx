@@ -114,12 +114,12 @@ const Pricing = () => {
                   </div>
                 )}
                 {plan.value && (
-                  <div className="absolute top-0 left-0 right-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-black text-center py-2 text-sm font-semibold z-20" style={{top: plan.popular ? '2.5rem' : 0}}>
+                  <div className="absolute left-0 right-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-black text-center py-2 text-sm font-semibold z-20" style={{top: plan.popular ? '2.5rem' : 0}}>
                     BEST VALUE
                   </div>
                 )}
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-50`}></div>
-                <CardHeader className="relative z-10 text-center pb-4">
+                <CardHeader className="relative z-10 text-center pb-4" style={{paddingTop: plan.popular && plan.value ? '5rem' : plan.popular || plan.value ? '3rem' : '1.5rem'}}>
                   <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
                     {plan.icon}
                   </div>
