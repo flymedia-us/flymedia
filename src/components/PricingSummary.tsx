@@ -56,8 +56,8 @@ const PricingSummary = () => {
               
               <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-50`}></div>
               
-              <CardHeader className="relative z-10 text-center pb-4">
-                <div className="mx-auto mb-3 p-3 bg-black/30 rounded-full w-fit">
+              <CardHeader className="relative z-10 text-center pb-4 pt-8">
+                <div className="mx-auto mb-2 p-3 bg-black/30 rounded-full w-fit">
                   {plan.icon}
                 </div>
                 <CardTitle className="text-white text-xl mb-2">{plan.name}</CardTitle>

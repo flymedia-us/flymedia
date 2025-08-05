@@ -86,7 +86,13 @@ const ForPerformers = () => {
               <div className="flex flex-col sm:flex-row items-center gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-32 h-32 bg-gray-600 rounded-lg shadow-lg flex items-center justify-center">
-                    <span className="text-gray-400 text-sm">Photo Coming Soon</span>
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/lovable-uploads/Sam Friedman.png" 
+                    alt="Sam Friedman"
+                    className="w-32 h-32 object-cover rounded-lg shadow-lg"
+                  />
+                </div>
                   </div>
                 </div>
                 
@@ -94,7 +100,7 @@ const ForPerformers = () => {
                   <div>
 
                     <h3 className="text-xl font-bold text-white">Sam Friedman</h3>
-                    <p className="text-blue-500 font-semibold">Co-Founder & CTO</p>
+                    <p className="text-blue-500 font-semibold">Co-Founder & COO</p>
                   </div>
                   
                   <p className="text-gray-300 text-sm leading-relaxed">
