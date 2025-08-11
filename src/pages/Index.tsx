@@ -11,6 +11,9 @@ import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+
+  document.title = 'Fly Media | Video & Social Media for Performers';
+
   return (
     <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden fixed left-0 right-0 top-0 bottom-0">
       {/* Floating orbs */}

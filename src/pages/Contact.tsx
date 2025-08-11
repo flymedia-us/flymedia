@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mail } from 'lucide-react';
 
 const Contact = () => {
+
+  document.title = 'Fly Media | Contact';
+
   return (
     <div className="min-h-screen animate-gradient text-white flex flex-col">
       <Header />

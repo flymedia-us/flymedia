@@ -6,7 +6,12 @@ import { Users, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { siInstagram } from 'simple-icons/icons';
 
+import React, { useEffect } from 'react';
+
 const Clients = () => {
+
+document.title = 'Fly Media | Clients';
+
   const clients = [
     {
       name: "Bernini Magic",
