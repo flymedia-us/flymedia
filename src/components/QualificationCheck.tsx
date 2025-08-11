@@ -7,9 +7,9 @@ const QualificationCheck = () => {
   const [checkedItems, setCheckedItems] = useState<boolean[]>([false, false, false]);
 
   const qualifications = [
-    "You're a performer/entertainer",
-    "You have raw footage of your performances",
-    "Your social media could be improved"
+    "You're a performer ready to grow your audience.",
+    "You have valuable footage ready to be transformed.",
+    "You know a better social presence means better bookings."
   ];
 
   const handleCheck = (index: number) => {

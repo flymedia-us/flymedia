@@ -35,11 +35,10 @@ const Process = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Simple Process,
-            <span className="gradient-text block mt-2">Explosive Results</span>
+            So Simple, <span className="gradient-text">it's Like Magic.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Going viral has never been easier. Just send us your content and watch your social media explode.
+            We make building your online audience easy. Just send us your footage and we'll handle the rest.
           </p>
         </div>
         
@@ -68,7 +67,7 @@ const Process = () => {
         
         <div className="text-center mt-16">
           <div className="inline-flex items-center px-6 py-3 dynamic-card rounded-full">
-            <span className="text-red-400 font-medium">⚡ New posts every day</span>
+            <span className="text-red-400 font-medium">⚡ New posts up to every day</span>
           </div>
         </div>
       </div>

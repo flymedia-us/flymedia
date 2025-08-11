@@ -6,8 +6,8 @@ const Hero = () => {
   const [viewCount, setViewCount] = useState(0);
 
   useEffect(() => {
-    const targetCount = 40000000; // 40 million
-    const fastDuration = 3000; // 3 seconds to reach 40M
+    const targetCount = 50000000; // 50 million
+    const fastDuration = 3000; // 3 seconds to reach 50M
     const fastIncrement = targetCount / (fastDuration / 16); // Update every 16ms for smooth animation
     
     let currentCount = 0;
@@ -46,11 +46,11 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10 w-full max-w-full">
         <div className="max-w-4xl mx-auto animate-slide-up">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight break-words">
-            Turn Your <span className="gradient-text">Performance</span> <br /> Into <span className="gradient-text">Viral Content</span>
+            Take Your <span className="gradient-text">Talent</span> <br />to a <span className="gradient-text">Global Stage</span>
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto break-words">
-            Grow your audience and book more shows with professional social media management.
+            We turn your show footage into a powerful social media presence that builds your fanbase and grows your career.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 w-full">

@@ -41,8 +41,7 @@ const Services = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Everything You Need to 
-            <span className="gradient-text block mt-2">Go Viral</span>
+            Your Complete <span className="gradient-text">Social Media Toolkit.</span> 
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             We handle every aspect of your social media presence so you can focus on what you do best - performing.

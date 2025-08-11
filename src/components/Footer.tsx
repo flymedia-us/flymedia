@@ -57,7 +57,10 @@ const Footer = () => {
         
         <div className="border-t border-red-900/20 mt-8 pt-8 text-center">
           <p className="text-gray-500">
-            © 2025 Fly Media LLC. All rights reserved. Ready to go viral?
+            © 2025 Fly Media LLC. All rights reserved.
+          </p>
+          <p className="text-gray-500 mt-2">
+            7901 4th Street N Suite 300 St. Petersburg, FL 33702
           </p>
         </div>
       </div>

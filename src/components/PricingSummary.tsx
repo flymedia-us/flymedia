@@ -35,7 +35,7 @@ const PricingSummary = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Choose Your <span className="gradient-text">Plan</span>
+            Choose Your <span className="gradient-text">Plan.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Transparent pricing with no hidden fees and 0% booking commission on all plans

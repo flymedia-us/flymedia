@@ -8,7 +8,7 @@ const ForPerformers = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            By a team who <span className="gradient-text">knows your needs.</span>
+            A Team That <span className="gradient-text">Knows Your Needs.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Led by a team of co-founders who know exactly what it takes to go viral and understand the unique needs of live performers.

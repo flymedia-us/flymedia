@@ -16,10 +16,10 @@ const CTA = () => {
       <div className="container mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Ready for takeoff?</span>
+            <span className="gradient-text">Ready for Takeoff?</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Join hundreds of performers who've transformed their social media presence with our viral content strategy.
+            Join the ranks of top performers who trust Fly Media to manage their social media and grow their careers.
           </p>
         </div>
         <div className="flex justify-center">
