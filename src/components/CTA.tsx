@@ -26,18 +26,14 @@ const CTA = () => {
           <Button 
             className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
             size="lg"
-            onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
+            onClick={() => window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ32QwBX2-e2uyJofbJQGp4QqlIs5OaBPw9jdxGsjXfUhnpvSFlA9QqQ3YJZ00ts1p5JfGGWsmDG', '_blank')}
           >
             <Calendar className="mr-3 w-7 h-7" />
-            Book a Free Consultation
+            Book a Discovery Call
           </Button>
         </div>
 
-        <p className="text-gray-300 text-center mt-4">To learn from a social media expert.</p>
-
-        <p className="text-gray-400 mt-6 text-sm text-center">
-          No obligation. Find out if we're a good fit.
-        </p>
+        <p className="text-gray-300 text-center mt-4">To see if we're a good fit. No obligation.</p>
       </div>
     </section>
   );
