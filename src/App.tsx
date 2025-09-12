@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Clients from "./pages/Clients";
+import SocialMediaGuide from "./pages/SocialMediaGuide";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/clients" element={<Clients />} />
+          <Route path="/social-media-guide" element={<SocialMediaGuide />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
