@@ -29,14 +29,14 @@ const CTA = () => {
             onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
           >
             <Calendar className="mr-3 w-7 h-7" />
-            Book Discovery Call
+            Book a Free Consultation
           </Button>
         </div>
 
-        <p className="text-gray-300 text-center mt-4">To see if we're a good fit.</p>
+        <p className="text-gray-300 text-center mt-4">To learn from a social media expert.</p>
 
         <p className="text-gray-400 mt-6 text-sm text-center">
-          No obligation. Free consultation included.
+          No obligation. Find out if we're a good fit.
         </p>
       </div>
     </section>
