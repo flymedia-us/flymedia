@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button';
 import { Calendar, Users, TrendingUp, Star, Video, MessageSquare, Camera } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const SocialMediaGuide = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -214,6 +215,7 @@ const SocialMediaGuide = () => {
           <p className="text-gray-300 text-center mt-4">No obligation. No pitch. Just value.</p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
