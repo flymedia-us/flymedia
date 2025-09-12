@@ -54,14 +54,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 w-full">
-            <Button 
-              size="lg" 
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
-              onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
-            >
-              <Calendar className="mr-2" size={20} />
-              Book a Free Consultation
-            </Button>
+          <Button 
+            className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-2xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
+            size="lg"
+            onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
+          >
+            <Calendar className="mr-3 w-7 h-7" />
+            Book a Free Consultation
+          </Button>
             
           </div>
           

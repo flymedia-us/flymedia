@@ -24,7 +24,7 @@ const CTA = () => {
         </div>
         <div className="flex justify-center">
           <Button 
-            className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-2xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
+            className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
             size="lg"
             onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
           >
