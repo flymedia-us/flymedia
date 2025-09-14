@@ -13,73 +13,111 @@ const Clients = () => {
 document.title = 'Fly Media | Clients';
 
   const clients = [
-    {
-      name: "Bernini Magic",
-      status: "Current Client", 
-      description: "Professional magician specializing in close-up magic and mentalism performances.",
-      highlight: "Create engaging content showcasing mind-bending illusions and audience reactions",
-      image: "/lovable-uploads/Bernini Magic.jpg",
-      instagram: "https://www.instagram.com/berninimagic/reels/",
-      instagramLabel: "@berninimagic"
-    },
+
     {
       name: "The Mind Noodler",
       status: "Current Client", 
-      description: "Mentalist and mind reader creating interactive experiences for live and digital audiences.",
-      highlight: "Craft compelling content showcasing incredible mentalism and audience participation",
+      description: "A quick-witted comedian and improviser who uses magic as a vehicle for hilarious, high-energy audience interaction. As head writer for Penn & Teller: Fool Us, his style is smart, irreverent, and always unpredictable.",
+      highlight: "Craft compelling content showcasing incredible mentalism and audience participation.",
       image: "/lovable-uploads/The Mind Noodler.jpg",
       instagram: "https://www.instagram.com/mindnoodler/reels/",
       instagramLabel: "@mindnoodler"
     },
     {
-      name: "Vinny Grosso",
-      status: "Current Client",
-      description: "Multi-talented performer blending comedy, magic, and audience interaction.",
-      highlight: "Build engaging social media presence through creative performance content",
-      image: "/lovable-uploads/Vinny Grosso.jpg",
-      instagram: "https://www.instagram.com/vinnygrosso/reels/",
-      instagramLabel: "@vinnygrosso"
-    },
-    {
-      name: "Judge Mentalist",
-      status: "Current Client",
-      description: "Professional mentalist and performer known for incredible mind-reading abilities.",
-      highlight: "Enhance online presence with captivating mentalism content and audience engagement",
-      image: "/lovable-uploads/Judge Mentalist.jpg",
-      instagram: "https://www.instagram.com/psychicish/reels/",
-      instagramLabel: "@psychicish"
-    },
-    {
       name: "Riccardo Berdini",
       status: "Current Client",
-      description: "Award-winning magician and mentalist known for cinematic storytelling and mind-blowing illusions.",
+      description: "An award-winning Italian mentalist and corporate speaker who blends sophisticated mind-reading with a charismatic sense of humor. His unique offerings range from motivational keynotes to a full 'Music & Magic' show with a live band.",
       highlight: "Produce cinematic content to showcase Riccardo's unique blend of magic and narrative.",
       image: "/lovable-uploads/Riccardo Berdini.jpg",
       instagram: "https://www.instagram.com/riccardoberdini/reels/",
       instagramLabel: "@riccardoberdini"
     },
     {
-      name: "Stunt Magician",
+      name: "Judge Mentalist",
       status: "Current Client",
-      description: "Extreme illusionist performing daring stunts and high-impact magic for live and digital audiences.",
+      description: "A masterful mentalist who operates in the intriguing space between psychological illusion and psychic phenomena. His 'Psychic-ish' brand challenges audiences to question their own perceptions in a smart and captivating performance.",
+      highlight: "Enhance online presence with captivating mentalism content and audience engagement",
+      image: "/lovable-uploads/Judge Mentalist.jpg",
+      instagram: "https://www.instagram.com/psychicish/reels/",
+      instagramLabel: "@psychicish"
+    },
+    {
+      name: "Mark Clearview",
+      status: "Current Client",
+      description: "A world-record-holding escape artist and comedy magician known for his jaw-dropping stunts and razor-sharp wit. A Golden Buzzer winner on Canada's Got Talent, his work blends extreme performance with philanthropy.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Stunt Magician.jpg",
-      instagram: "https://www.instagram.com/stuntmagician/reels/",
-      instagramLabel: "@stuntmagician"
+      image: "/lovable-uploads/Mark Clearview.jpg",
+      instagram: "https://www.instagram.com/markclearview/reels/",
+      instagramLabel: "@markclearview"
+    },
+    {
+      name: "Siegfried Tieber",
+      status: "Current Client",
+      description: "An internationally acclaimed sleight-of-hand artist who creates intimate and mystifying experiences. A native of Ecuador, his masterful technique fooled Penn & Teller and earned his show the #1 spot in New York City.",
+      highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
+      image: "/lovable-uploads/Siegfried Tieber.jpg",
+      instagram: "https://www.instagram.com/siegfriedtieber/reels/",
+      instagramLabel: "@siegfriedtieber"
+    },
+    {
+      name: "Jamie Allen",
+      status: "Current Client",
+      description: "A theatrical innovator and the UK's original technology magician, known for fusing cutting-edge digital illusions with heartfelt, autobiographical storytelling. His hit show 'Amaze' is a journey through his life in magic.",
+      highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
+      image: "/lovable-uploads/Jamie Allen.jpg",
+      instagram: "https://www.instagram.com/amazelive/reels/",
+      instagramLabel: "@amazelive"
+    },
+
+    {
+      name: "Lionel Dellberg",
+      status: "Current Client",
+      description: "A charismatic Swiss magician and cabaret artist who delights international audiences with his humor and charm. A Fool Us trophy winner, he performs his amazing magic in over four languages.",
+      highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
+      image: "/lovable-uploads/Lionel Dellberg.jpg",
+      instagram: "https://www.instagram.com/lioneldellberg/reels/",
+      instagramLabel: "@lioneldellberg"
+    },
+    {
+      name: "Vinny Grosso",
+      status: "Former Client",
+      description: "A Las Vegas headliner, comedian, and world-record holder who twice fooled Penn & Teller. His hit show, Totally Mental, is a high-energy blend of comedy, mind-reading, and unforgettable stunts.",
+      highlight: "Build engaging social media presence through creative performance content",
+      image: "/lovable-uploads/Vinny Grosso.jpg",
+      instagram: "https://www.instagram.com/vinnygrosso/reels/",
+      instagramLabel: "@vinnygrosso"
+    },
+    {
+      name: "Bernini Magic",
+      status: "Former Client", 
+      description: "A Penn & Teller: Fool Us winner who delivers world-class magic for top corporate clients and major faith-based organizations. His performances blend mind-bending illusion with powerful, tailored messaging.",
+      highlight: "Create engaging content showcasing mind-bending illusions and audience reactions",
+      image: "/lovable-uploads/Bernini Magic.jpg",
+      instagram: "https://www.instagram.com/berninimagic/reels/",
+      instagramLabel: "@berninimagic"
     },
     {
       name: "Nathan Coe Marsh",
-      status: "Current Client",
-      description: "Acclaimed magician and entertainer specializing in interactive and innovative performances.",
+      status: "Former Client",
+      description: "A polished and hilarious professional magician, known for his comedic style and regular headline performances at Hollywood's Magic Castle. He is also a respected columnist for the industry's top trade journal, Genii.",
       highlight: "Help Nathan connect with new audiences through creative, interactive social content.",
       image: "/lovable-uploads/Nathan Coe Marsh.jpg",
       instagram: "https://www.instagram.com/nathan_coe_marsh/reels/",
       instagramLabel: "@nathan_coe_marsh"
     },
     {
+      name: "Stunt Magician",
+      status: "Former Client",
+      description: "A high-energy comedy magician and stunt artist who starred in the TruTV series Big Trick Energy. A Penn & Teller: Fool Us winner, his act is a relentless combination of hilarious audience interaction and daring physical stunts.",
+      highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
+      image: "/lovable-uploads/Stunt Magician.jpg",
+      instagram: "https://www.instagram.com/stuntmagician/reels/",
+      instagramLabel: "@stuntmagician"
+    },
+    {
       name: "The Passing Zone",
       status: "Former Client",
-      description: "Comedy juggling duo known for their high-energy performances and television appearances.",
+      description: "A world-renowned comedy juggling duo holding five Guinness World Records. Two-time finalists on America's Got Talent, they deliver hilarious, high-stakes performances and powerful keynotes on teamwork to top corporations.",
       highlight: "Helped amplify their viral comedy juggling content across multiple platforms",
       image: "/lovable-uploads/The Passing Zone.jpg",
       instagram: "https://www.instagram.com/thepassingzone/reels/",
@@ -88,7 +126,7 @@ document.title = 'Fly Media | Clients';
     {
       name: "Magical Bones",
       status: "Former Client",
-      description: "Dynamic performer combining magic with theatrical storytelling and character work.",
+      description: "A truly unique performer who seamlessly blends breathtaking magic with his skills as a professional b-boy (breakdancer). A finalist on Britain's Got Talent, his soulful style combines high-energy dance with powerful storytelling.",
       highlight: "Developed viral content highlighting unique magical performances and character development",
       image: "/lovable-uploads/Magical Bones.jpg",
       instagram: "https://www.instagram.com/magicalbones/reels/",
@@ -148,12 +186,12 @@ document.title = 'Fly Media | Clients';
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="pt-4 border-t border-gray-700 flex-grow flex flex-col gap-4">
-                      <div className="flex items-start space-x-3">
+                      {/* <div className="flex items-start space-x-3">
                         <Star className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
                         <p className="text-gray-300 text-sm leading-relaxed">
                           {client.highlight}
                         </p>
-                      </div>
+                      </div> */}
                       {client.instagram && (
                         <Button 
                           asChild 
