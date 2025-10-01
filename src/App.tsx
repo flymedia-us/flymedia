@@ -10,6 +10,7 @@ import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Clients from "./pages/Clients";
 import SocialMediaGuide from "./pages/SocialMediaGuide";
+import YouTubeSetup from "./pages/YouTubeSetup";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/learn" element={<SocialMediaGuide />} />
+          <Route path="/youtube-setup" element={<YouTubeSetup />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
