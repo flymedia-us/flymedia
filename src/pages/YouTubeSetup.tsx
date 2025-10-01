@@ -159,7 +159,7 @@ const YouTubeSetup = () => {
                       <span className="text-green-500 font-bold">✓</span>
                       <div>
                         <p className="text-gray-200 font-semibold">Option 1 (Recommended): Manager</p>
-                        <p className="text-gray-400 text-sm">Access to invite team members and manage content</p>
+                        <p className="text-gray-400 text-sm">Sam has access to manage content and invite Fly Media team members</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
@@ -207,10 +207,10 @@ const YouTubeSetup = () => {
             <div className="bg-gradient-to-r from-green-950/30 to-green-900/20 border border-green-600 rounded-lg p-6 text-center">
               <h3 className="text-2xl font-bold text-green-400 mb-2">All Set! 🎉</h3>
               <p className="text-gray-300 mb-4">
-                Once you've completed these steps, Sam will receive the invitation and our team can start working on growing your channel.
+                Once you've completed these steps, our team can improve our work to grow your audience.
               </p>
               <p className="text-gray-400 text-sm">
-                Have questions? Contact us anytime at{' '}
+                Have questions? Contact Sam directly at{' '}
                 <a href="mailto:sam@flymedia.us" className="text-red-500 hover:text-red-400 underline">
                   sam@flymedia.us
                 </a>
