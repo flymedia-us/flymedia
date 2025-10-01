@@ -12,7 +12,7 @@ const YouTubeSetup = () => {
             Connect Your YouTube Studio
           </h1>
           <p className="text-gray-400 text-lg mb-12">
-            Follow these simple steps to grant FLY MEDIA access to your YouTube channel so we can help grow your audience.
+            Follow these simple steps to securely grant us access to your YouTube channel so we can help grow your audience and manage reward payouts (when applicable).
           </p>
 
           <div className="space-y-8">
@@ -150,7 +150,7 @@ const YouTubeSetup = () => {
                       <strong>Why Manager access?</strong>
                     </p>
                     <p className="text-gray-300 text-sm">
-                      Manager access allows Sam to invite other team members who will help optimize your content, manage uploads, and grow your channel. This streamlines our workflow and gets you results faster.
+                      Manager access allows Sam to invite other team members who will help optimize your content and grow your channel. This streamlines our workflow and gets you results faster.
                     </p>
                   </div>
 
@@ -159,21 +159,21 @@ const YouTubeSetup = () => {
                       <span className="text-green-500 font-bold">✓</span>
                       <div>
                         <p className="text-gray-200 font-semibold">Option 1 (Recommended): Manager</p>
-                        <p className="text-gray-400 text-sm">Full access to invite team members and manage content</p>
+                        <p className="text-gray-400 text-sm">Access to invite team members and manage content</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-yellow-500 font-bold">○</span>
                       <div>
                         <p className="text-gray-200 font-semibold">Option 2 (Alternative): Editor</p>
-                        <p className="text-gray-400 text-sm">Can edit content but cannot invite team members</p>
+                        <p className="text-gray-400 text-sm">Sam can edit content but cannot invite team members</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-2">
                       <span className="text-orange-500 font-bold">○</span>
                       <div>
                         <p className="text-gray-200 font-semibold">Option 3 (Limited): Viewer</p>
-                        <p className="text-gray-400 text-sm">Read-only access (limits our ability to help)</p>
+                        <p className="text-gray-400 text-sm">Sam has read-only access</p>
                       </div>
                     </div>
                   </div>
