@@ -12,7 +12,7 @@ const YouTubeSetup = () => {
             Connect Your YouTube Studio
           </h1>
           <p className="text-gray-400 text-lg mb-12">
-            Follow these simple steps to securely grant us access to your YouTube channel so we can help grow your audience and manage reward payouts (when applicable).
+            Follow these simple steps to securely grant us access to your YouTube channel so we can help grow your audience and manage reward payouts (when applicable). We recommend following these steps on a desktop or laptop.
           </p>
 
           <div className="space-y-8">
@@ -35,8 +35,11 @@ const YouTubeSetup = () => {
                       studio.youtube.com
                     </a>
                   </p>
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-                    <p className="text-sm text-gray-400 text-center">Image: YouTube Studio homepage</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt1.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
@@ -51,10 +54,13 @@ const YouTubeSetup = () => {
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-2">Verify Your Account</h3>
                   <p className="text-gray-300 mb-2">
-                    Ensure you're logged into the correct channel by checking the account switcher in the top right corner.
+                    Ensure you're logged into the correct channel by checking the account switcher in the top right corner. If needed, click "Switch account" and select the correct channel.
                   </p>
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-                    <p className="text-sm text-gray-400 text-center">Image: Account switcher location</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt2.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
@@ -71,8 +77,11 @@ const YouTubeSetup = () => {
                   <p className="text-gray-300 mb-2">
                     Click the <strong>Settings</strong> button in the bottom left corner of YouTube Studio.
                   </p>
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-                    <p className="text-sm text-gray-400 text-center">Image: Settings button location</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt3.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
@@ -89,8 +98,11 @@ const YouTubeSetup = () => {
                   <p className="text-gray-300 mb-2">
                     Click <strong>Permissions</strong> in the settings menu.
                   </p>
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-                    <p className="text-sm text-gray-400 text-center">Image: Permissions menu</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt4.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
@@ -105,8 +117,11 @@ const YouTubeSetup = () => {
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold mb-2">Invite Team Member</h3>
                   <p className="text-gray-300 mb-2">Click the <strong>Invite</strong> button.</p>
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800">
-                    <p className="text-sm text-gray-400 text-center">Image: Invite button</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt567.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
@@ -178,8 +193,11 @@ const YouTubeSetup = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gray-900 rounded-lg p-4 border border-gray-800 mt-4">
-                    <p className="text-sm text-gray-400 text-center">Image: Access level dropdown</p>
+                  <div>
+                    <img 
+                      src="/lovable-uploads/youtube-setup/yt567.png" 
+                      className="rounded-xl"
+                    />
                   </div>
                 </div>
               </div>
