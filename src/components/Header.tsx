@@ -32,12 +32,6 @@ const Header = () => {
               Clients
             </Link>
             <Link
-              to="/learn"
-              className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/learn' ? 'text-red-500' : ''}`}
-            >
-              Learn
-            </Link>
-            <Link
               to="/contact"
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/contact' ? 'text-red-500' : ''}`}
             >
@@ -65,7 +59,6 @@ const Header = () => {
             <div className="flex flex-col space-y-4 pt-4">
               <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
               <Link to="/clients" className="text-gray-300 hover:text-red-500 transition-colors">Clients</Link>
-              <Link to="/learn" className="text-gray-300 hover:text-red-500 transition-colors">Learn</Link>
               <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
               <Button asChild className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
                 <a href={DISCOVERY_CALL_URL} target="_blank" rel="noopener noreferrer">
