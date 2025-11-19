@@ -14,40 +14,68 @@ const ForPerformers = () => {
             Led by a team of co-founders who know exactly what it takes to go viral and understand the unique needs of live performers.
           </p>
         </div>
-        
+
         <Card className="dynamic-card animate-shimmer max-w-6xl mx-auto mb-12">
           <CardContent className="p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              {/* Sam Friedman */}
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-32 h-32 bg-gray-600 rounded-lg shadow-lg flex items-center justify-center">
+                    <div className="flex-shrink-0">
+                      <img
+                        src="/lovable-uploads/Sam Friedman.png"
+                        alt="Sam Friedman"
+                        className="w-32 h-32 object-cover rounded-lg shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex-1 space-y-3 text-center sm:text-left">
+                  <div>
+
+                    <h3 className="text-xl font-bold text-white">Sam Friedman</h3>
+                    <p className="text-blue-500 font-semibold">Co-Founder & COO</p>
+                  </div>
+
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    With over 10 years of experience in video production plus a background in tech and working directly with clients, Sam brings the
+                    expertise to produce and distribute high-quality content.
+                  </p>
+                </div>
+              </div>
+
               {/* Bennett Santora */}
               <div className="flex flex-col sm:flex-row items-center gap-6">
                 <div className="flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/Fly Juggler.png" 
-                    alt="Bennett Santora - The Fly Juggler" 
+                  <img
+                    src="/lovable-uploads/Fly Juggler.png"
+                    alt="Bennett Santora - The Fly Juggler"
                     className="w-32 h-32 object-cover rounded-lg shadow-lg"
                   />
                 </div>
-                
+
                 <div className="flex-1 space-y-3 text-center sm:text-left">
                   <div>
                     <h3 className="text-xl font-bold text-white">Bennett Santora</h3>
-                    <p className="text-red-500 font-semibold">aka Fly Juggler. Co-Founder & CMO</p>
+                    <p className="text-red-500 font-semibold">aka Fly Juggler. Co-Founder</p>
                   </div>
-                  
+
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    A performer himself with over 1 million followers across platforms. Bennett understands the 
+                    A performer himself with over 1 million followers across platforms. Bennett understands the
                     unique challenges of creating viral content that showcases your talent.
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
-                    <Button 
-                      asChild 
+                    <Button
+                      asChild
                       size="sm"
                       className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white"
                     >
-                      <a 
-                        href="https://www.instagram.com/flyjuggler/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.instagram.com/flyjuggler/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center"
                       >
@@ -59,14 +87,14 @@ const ForPerformers = () => {
                         380K+
                       </a>
                     </Button>
-                    <Button 
-                      asChild 
+                    <Button
+                      asChild
                       size="sm"
                       className="bg-[#010101] hover:bg-[#161616] text-white border border-[#25F4EE]"
                     >
-                      <a 
-                        href="https://www.tiktok.com/@flyjuggler" 
-                        target="_blank" 
+                      <a
+                        href="https://www.tiktok.com/@flyjuggler"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center"
                       >
@@ -81,39 +109,11 @@ const ForPerformers = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Sam Friedman */}
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 bg-gray-600 rounded-lg shadow-lg flex items-center justify-center">
-                <div className="flex-shrink-0">
-                  <img 
-                    src="/lovable-uploads/Sam Friedman.png" 
-                    alt="Sam Friedman"
-                    className="w-32 h-32 object-cover rounded-lg shadow-lg"
-                  />
-                </div>
-                  </div>
-                </div>
-                
-                <div className="flex-1 space-y-3 text-center sm:text-left">
-                  <div>
-
-                    <h3 className="text-xl font-bold text-white">Sam Friedman</h3>
-                    <p className="text-blue-500 font-semibold">Co-Founder & COO</p>
-                  </div>
-                  
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    With over 10 years of experience in video production plus a background in tech and working directly with clients, Sam brings the 
-                     expertise to produce and distribute high-quality content.
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="text-center pt-4 border-t border-gray-700">
               <p className="text-gray-300 leading-relaxed">
-                Together, Bennett and Sam lead a powerhouse creative team that combines performer insights with 
+                Sam leads a powerhouse creative team that combines performer insights with
                 technical excellence to help entertainers like you dominate social media and build loyal audiences.
               </p>
             </div>
