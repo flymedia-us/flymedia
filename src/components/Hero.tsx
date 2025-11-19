@@ -2,6 +2,8 @@ import { Button } from '@/components/ui/button';
 import { Play, Calendar } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
+import { DISCOVERY_CALL_URL } from '@/config/constants';
+
 const Hero = () => {
   const [viewCount, setViewCount] = useState(0);
 
@@ -57,7 +59,7 @@ const Hero = () => {
             <Button
               className="bg-red-600 hover:bg-red-700 text-white px-12 py-6 text-2xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
               size="lg"
-              onClick={() => window.open('https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ32QwBX2-e2uyJofbJQGp4QqlIs5OaBPw9jdxGsjXfUhnpvSFlA9QqQ3YJZ00ts1p5JfGGWsmDG', '_blank')}
+              onClick={() => window.open(DISCOVERY_CALL_URL, '_blank')}
             >
               <Calendar className="mr-3 w-7 h-7" />
               Book a Discovery Call
