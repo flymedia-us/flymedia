@@ -48,7 +48,7 @@ const SocialMediaGuide = () => {
     <div className="min-h-screen bg-black text-white">
       <Header />
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-6">
+      <section className="pt-40 pb-16 px-6">
         <div className="container mx-auto text-center">
           <h1 className={`text-4xl md:text-6xl font-bold mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <span className="gradient-text">Social Media Mastery</span>
@@ -59,7 +59,7 @@ const SocialMediaGuide = () => {
             Transform your social media presence and turn followers into bookings with proven strategies from industry experts.
           </p>
           <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <Button 
+            <Button
               className="bg-red-600 hover:bg-red-700 text-white px-4 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
               size="lg"
               onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
@@ -102,11 +102,11 @@ const SocialMediaGuide = () => {
             </h2>
             <div className="space-y-6 text-lg text-gray-300 mb-12">
               <p>
-                You're incredibly talented. Your performances are amazing. But your social media feels like a chore, 
+                You're incredibly talented. Your performances are amazing. But your social media feels like a chore,
                 and you're not seeing the bookings you deserve.
               </p>
               <p>
-                The truth is, talent alone isn't enough in today's digital world. You need a strategic approach 
+                The truth is, talent alone isn't enough in today's digital world. You need a strategic approach
                 to social media that showcases your skills AND converts viewers into paying clients.
               </p>
               <p className="text-xl font-semibold text-white">
@@ -151,15 +151,15 @@ const SocialMediaGuide = () => {
                   <h3 className="text-2xl font-bold mb-4">Bennett "Fly Juggler" Santora</h3>
                   <p className="text-red-400 font-semibold mb-6">Over 1 Million Social Media Followers</p>
                   <p className="text-lg text-gray-300 leading-relaxed">
-                    Bennett has built one of the largest performer followings online and has helped dozens of 
-                    entertainers transform their social media presence. He knows exactly what works because 
+                    Bennett has built one of the largest performer followings online and has helped dozens of
+                    entertainers transform their social media presence. He knows exactly what works because
                     he's done it himself and for countless others.
                   </p>
                 </div>
                 <div className="order-1 md:order-2">
                   <div className="aspect-square w-full max-w-sm mx-auto">
-                    <img 
-                      src="/lovable-uploads/Fly Juggler.png" 
+                    <img
+                      src="/lovable-uploads/Fly Juggler.png"
                       alt="Bennett 'Fly Juggler' Santora"
                       className="w-full h-full object-cover rounded-lg shadow-xl"
                     />
@@ -201,10 +201,10 @@ const SocialMediaGuide = () => {
             <span className="gradient-text">Ready to Transform Your Social Media?</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-            Book your free strategy session with Bennett and discover how to turn your social media 
+            Book your free strategy session with Bennett and discover how to turn your social media
             into a booking machine.
           </p>
-          <Button 
+          <Button
             className="bg-red-600 hover:bg-red-700 text-white px-4 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl animate-pulse-glow w-full sm:w-auto max-w-md rounded-md shadow-xl"
             size="lg"
             onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}

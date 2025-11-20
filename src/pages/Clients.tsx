@@ -144,7 +144,7 @@ const Clients = () => {
 
       <Header />
 
-      <main className="pt-24 pb-20">
+      <main className="pt-40 pb-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-slide-up">
             <div className="mx-auto mb-6 p-4 bg-black/30 rounded-full w-fit animate-float">

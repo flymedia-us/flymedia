@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen animate-gradient text-white flex flex-col">
       <Header />
-      <section className="flex-grow flex items-center justify-center px-4 pt-32 pb-20">
+      <section className="flex-grow flex items-center justify-center px-4 pt-40 pb-20">
         <div className="container mx-auto max-w-xl animate-slide-up">
           <Card className="bg-black/60 backdrop-blur-md border border-red-600 shadow-xl">
             <CardHeader className="text-center">

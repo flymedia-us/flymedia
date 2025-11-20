@@ -5,8 +5,8 @@ const YouTubeSetup = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header />
-      
-      <main className="container mx-auto px-6 py-24 md:py-32">
+
+      <main className="container mx-auto px-6 pt-40 pb-24 md:py-32">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
             Connect Your YouTube Studio
@@ -26,9 +26,9 @@ const YouTubeSetup = () => {
                   <h3 className="text-xl font-semibold mb-2">Visit YouTube Studio</h3>
                   <p className="text-gray-300 mb-4">
                     Navigate to{' '}
-                    <a 
-                      href="https://studio.youtube.com" 
-                      target="_blank" 
+                    <a
+                      href="https://studio.youtube.com"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-red-500 hover:text-red-400 underline"
                     >
@@ -36,8 +36,8 @@ const YouTubeSetup = () => {
                     </a>
                   </p>
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt1.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt1.png"
                       className="rounded-xl"
                     />
                   </div>
@@ -57,8 +57,8 @@ const YouTubeSetup = () => {
                     Ensure you're logged into the correct channel by checking the account switcher in the top right corner. If needed, click "Switch account" and select the correct channel.
                   </p>
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt2.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt2.png"
                       className="rounded-xl"
                     />
                   </div>
@@ -78,8 +78,8 @@ const YouTubeSetup = () => {
                     Click the <strong>Settings</strong> button in the bottom left corner of YouTube Studio.
                   </p>
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt3.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt3.png"
                       className="rounded-xl"
                     />
                   </div>
@@ -99,8 +99,8 @@ const YouTubeSetup = () => {
                     Click <strong>Permissions</strong> in the settings menu.
                   </p>
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt4.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt4.png"
                       className="rounded-xl"
                     />
                   </div>
@@ -118,8 +118,8 @@ const YouTubeSetup = () => {
                   <h3 className="text-xl font-semibold mb-2">Invite Team Member</h3>
                   <p className="text-gray-300 mb-2">Click the <strong>Invite</strong> button.</p>
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt567.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt567.png"
                       className="rounded-xl"
                     />
                   </div>
@@ -159,7 +159,7 @@ const YouTubeSetup = () => {
                   <p className="text-gray-300 mb-4">
                     Change the access level to <strong>Manager</strong> (preferred).
                   </p>
-                  
+
                   <div className="bg-blue-950/30 border border-blue-600 rounded-lg p-4 mb-4">
                     <p className="text-blue-300 text-sm mb-2">
                       <strong>Why Manager access?</strong>
@@ -194,8 +194,8 @@ const YouTubeSetup = () => {
                   </div>
 
                   <div>
-                    <img 
-                      src="/lovable-uploads/youtube-setup/yt567.png" 
+                    <img
+                      src="/lovable-uploads/youtube-setup/yt567.png"
                       className="rounded-xl"
                     />
                   </div>
