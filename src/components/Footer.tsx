@@ -1,4 +1,5 @@
 import { SOCIAL_LINKS, COMPANY_INFO } from '@/config/constants';
+import { siInstagram, siTiktok, siFacebook, siSnapchat, siYoutube, siX } from 'simple-icons';
 
 const Footer = () => {
   return (
@@ -17,22 +18,22 @@ const Footer = () => {
               <h4 className="text-white font-semibold mb-3">Follow Us</h4>
               <div className="flex space-x-4">
                 <a href={SOCIAL_LINKS.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-500 rounded-full p-2 hover:scale-110 transition-transform">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M16.98 8.27a1.09 1.09 0 1 1-2.18 0 1.09 1.09 0 0 1 2.18 0ZM12 9.5A2.5 2.5 0 1 0 12 14.5 2.5 2.5 0 0 0 12 9.5Zm0 6.5a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5.5-8.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" fill="#E1306C" /></svg>
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siInstagram.path} /></svg>
                 </a>
                 <a href={SOCIAL_LINKS.TIKTOK} target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="bg-black rounded-full p-2 hover:scale-110 transition-transform">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M16.5 8.5c-.7 0-1.3-.2-1.8-.6V15c0 2-1.6 3.6-3.6 3.6S7.5 17 7.5 15s1.6-3.6 3.6-3.6c.2 0 .4 0 .6.1V13c-.2-.1-.4-.1-.6-.1-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2V7.5h1.5c.1.7.7 1.3 1.4 1.5v1.5z" fill="#000" /></svg>
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siTiktok.path} /></svg>
                 </a>
-                <a href={SOCIAL_LINKS.FACEBOOK} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-blue-600 rounded-full p-2 hover:scale-110 transition-transform">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M15.5 8.5h-2V7.5c0-.3.2-.5.5-.5h1.5V5h-2c-1.1 0-2 .9-2 2v1.5H8.5V11H11v6h2v-6h1.3l.2-2.5z" fill="#1877F3" /></svg>
+                <a href={SOCIAL_LINKS.FACEBOOK} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="bg-[#1877F2] rounded-full p-2 hover:scale-110 transition-transform">
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siFacebook.path} /></svg>
                 </a>
-                <a href={SOCIAL_LINKS.SNAPCHAT} target="_blank" rel="noopener noreferrer" aria-label="Snapchat" className="bg-yellow-400 rounded-full p-2 hover:scale-110 transition-transform">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M12 7c-2.2 0-4 1.8-4 4 0 1.7 1.1 3.1 2.7 3.7-.1.2-.2.4-.2.6 0 .6.5 1.1 1.1 1.1s1.1-.5 1.1-1.1c0-.2-.1-.4-.2-.6C14.9 14.1 16 12.7 16 11c0-2.2-1.8-4-4-4z" fill="#FFFC00" /></svg>
+                <a href={SOCIAL_LINKS.SNAPCHAT} target="_blank" rel="noopener noreferrer" aria-label="Snapchat" className="bg-[#FFFC00] rounded-full p-2 hover:scale-110 transition-transform">
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siSnapchat.path} /></svg>
                 </a>
-                <a href={SOCIAL_LINKS.YOUTUBE} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="bg-red-600 rounded-full p-2 hover:scale-110 transition-transform">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M16.5 10.5c0-.8-.7-1.5-1.5-1.5h-6c-.8 0-1.5.7-1.5 1.5v3c0 .8.7 1.5 1.5 1.5h6c.8 0 1.5-.7 1.5-1.5v-3zm-5 2.5v-2l2 1-2 1z" fill="#FF0000" /></svg>
+                <a href={SOCIAL_LINKS.YOUTUBE} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="bg-[#FF0000] rounded-full p-2 hover:scale-110 transition-transform">
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siYoutube.path} /></svg>
                 </a>
-                <a href={SOCIAL_LINKS.X} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="bg-black rounded-full p-2 hover:scale-110 transition-transform border border-white/20">
-                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="white" /><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" fill="black" transform="translate(4, 4) scale(0.65)" /></svg>
+                <a href={SOCIAL_LINKS.X} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="bg-black rounded-full p-2 hover:scale-110 transition-transform">
+                  <svg role="img" viewBox="0 0 24 24" className="w-5 h-5 fill-white" xmlns="http://www.w3.org/2000/svg"><path d={siX.path} /></svg>
                 </a>
               </div>
             </div>
