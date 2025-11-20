@@ -1,10 +1,9 @@
 import { Suspense, lazy } from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import ClientsCarousel from '@/components/ClientsCarousel';
-import QualificationCheck from '@/components/QualificationCheck';
-
 // Lazy load below-the-fold components
+const ClientsCarousel = lazy(() => import('@/components/ClientsCarousel'));
+const QualificationCheck = lazy(() => import('@/components/QualificationCheck'));
 const Services = lazy(() => import('@/components/Services'));
 const ForPerformers = lazy(() => import('@/components/ForPerformers'));
 const PricingSummary = lazy(() => import('@/components/PricingSummary'));
@@ -30,10 +29,10 @@ const Index = () => {
 
       <Header />
       <Hero />
-      <ClientsCarousel />
-      <QualificationCheck />
 
       <Suspense fallback={<div className="py-20 text-center">Loading...</div>}>
+        <ClientsCarousel />
+        <QualificationCheck />
         <Services />
         <ForPerformers />
         <PricingSummary />

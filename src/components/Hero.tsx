@@ -9,7 +9,7 @@ const Hero = () => {
 
   useEffect(() => {
     const targetCount = 75000000; // 75 million
-    const fastDuration = 3000; // 3 seconds to reach 50M
+    const fastDuration = 2000; // 2 seconds to reach 50M
     const fastIncrement = targetCount / (fastDuration / 16); // Update every 16ms for smooth animation
 
     let currentCount = 0;
@@ -46,7 +46,7 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-red-500/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
 
       <div className="container mx-auto px-6 text-center relative z-10 w-full max-w-full">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
 
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight break-words">
             Take Your <span className="gradient-text">Talent</span> <br />to a <span className="gradient-text">Global Stage</span>

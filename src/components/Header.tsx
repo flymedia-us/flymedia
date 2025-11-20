@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { DISCOVERY_CALL_URL } from '@/config/constants';
 import PromoBanner from './PromoBanner';
+import PrefetchLink from './PrefetchLink';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,24 +22,27 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
+            <PrefetchLink
               to="/pricing"
+              prefetch="pricing"
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/pricing' ? 'text-red-500' : ''}`}
             >
               Pricing
-            </Link>
-            <Link
+            </PrefetchLink>
+            <PrefetchLink
               to="/clients"
+              prefetch="clients"
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/clients' ? 'text-red-500' : ''}`}
             >
               Clients
-            </Link>
-            <Link
+            </PrefetchLink>
+            <PrefetchLink
               to="/contact"
+              prefetch="contact"
               className={`text-gray-300 hover:text-red-500 transition-colors ${location.pathname === '/contact' ? 'text-red-500' : ''}`}
             >
               Contact
-            </Link>
+            </PrefetchLink>
             <Button asChild className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:shadow-[0_0_25px_rgba(220,38,38,0.7)] transition-all duration-300">
               <a href={DISCOVERY_CALL_URL} target="_blank" rel="noopener noreferrer">
                 Get Started
@@ -59,9 +63,9 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-blue-900/30">
             <div className="flex flex-col space-y-4 pt-4">
-              <Link to="/pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</Link>
-              <Link to="/clients" className="text-gray-300 hover:text-red-500 transition-colors">Clients</Link>
-              <Link to="/contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</Link>
+              <PrefetchLink to="/pricing" prefetch="pricing" className="text-gray-300 hover:text-red-500 transition-colors">Pricing</PrefetchLink>
+              <PrefetchLink to="/clients" prefetch="clients" className="text-gray-300 hover:text-red-500 transition-colors">Clients</PrefetchLink>
+              <PrefetchLink to="/contact" prefetch="contact" className="text-gray-300 hover:text-red-500 transition-colors">Contact</PrefetchLink>
               <Button asChild className="bg-red-600 hover:bg-red-700 text-white w-full animate-pulse-glow">
                 <a href={DISCOVERY_CALL_URL} target="_blank" rel="noopener noreferrer">
                   Get Started

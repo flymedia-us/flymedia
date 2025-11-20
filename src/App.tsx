@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,14 +6,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 
+import { routes } from "./routes";
+
 // Lazy load pages
-const Index = lazy(() => import("./pages/Index"));
-const Pricing = lazy(() => import("./pages/Pricing"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Clients = lazy(() => import("./pages/Clients"));
-const SocialMediaGuide = lazy(() => import("./pages/SocialMediaGuide"));
-const YouTubeSetup = lazy(() => import("./pages/YouTubeSetup"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+const { Index, Pricing, Contact, Clients, SocialMediaGuide, YouTubeSetup, NotFound } = routes;
 
 const queryClient = new QueryClient();
 
