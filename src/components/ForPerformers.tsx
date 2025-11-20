@@ -24,7 +24,7 @@ const ForPerformers = () => {
                   <div className="w-32 h-32 bg-gray-600 rounded-lg shadow-lg flex items-center justify-center">
                     <div className="flex-shrink-0">
                       <img
-                        src="/lovable-uploads/Sam Friedman.png"
+                        src="/lovable-uploads/Sam Friedman.webp"
                         alt="Sam Friedman"
                         className="w-32 h-32 object-cover rounded-lg shadow-lg"
                       />
@@ -50,7 +50,7 @@ const ForPerformers = () => {
               <div className="flex flex-col sm:flex-row items-center gap-6">
                 <div className="flex-shrink-0">
                   <img
-                    src="/lovable-uploads/Fly Juggler.png"
+                    src="/lovable-uploads/Fly Juggler.webp"
                     alt="Bennett Santora - The Fly Juggler"
                     className="w-32 h-32 object-cover rounded-lg shadow-lg"
                   />

@@ -37,7 +37,8 @@ const YouTubeSetup = () => {
                   </p>
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt1.png"
+                      src="/lovable-uploads/youtube-setup/yt1.webp"
+                      alt="YouTube Studio dashboard showing the URL bar"
                       className="rounded-xl"
                     />
                   </div>
@@ -58,7 +59,8 @@ const YouTubeSetup = () => {
                   </p>
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt2.png"
+                      src="/lovable-uploads/youtube-setup/yt2.webp"
+                      alt="YouTube account switcher menu"
                       className="rounded-xl"
                     />
                   </div>
@@ -79,7 +81,8 @@ const YouTubeSetup = () => {
                   </p>
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt3.png"
+                      src="/lovable-uploads/youtube-setup/yt3.webp"
+                      alt="YouTube Studio settings button location"
                       className="rounded-xl"
                     />
                   </div>
@@ -100,7 +103,8 @@ const YouTubeSetup = () => {
                   </p>
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt4.png"
+                      src="/lovable-uploads/youtube-setup/yt4.webp"
+                      alt="Permissions tab in YouTube Studio settings"
                       className="rounded-xl"
                     />
                   </div>
@@ -119,7 +123,8 @@ const YouTubeSetup = () => {
                   <p className="text-gray-300 mb-2">Click the <strong>Invite</strong> button.</p>
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt567.png"
+                      src="/lovable-uploads/youtube-setup/yt567.webp"
+                      alt="Invite button in Permissions settings"
                       className="rounded-xl"
                     />
                   </div>
@@ -195,7 +200,8 @@ const YouTubeSetup = () => {
 
                   <div>
                     <img
-                      src="/lovable-uploads/youtube-setup/yt567.png"
+                      src="/lovable-uploads/youtube-setup/yt567.webp"
+                      alt="Access level selection showing Manager option"
                       className="rounded-xl"
                     />
                   </div>

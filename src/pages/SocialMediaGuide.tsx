@@ -159,7 +159,7 @@ const SocialMediaGuide = () => {
                 <div className="order-1 md:order-2">
                   <div className="aspect-square w-full max-w-sm mx-auto">
                     <img
-                      src="/lovable-uploads/Fly Juggler.png"
+                      src="/lovable-uploads/Fly Juggler.webp"
                       alt="Bennett 'Fly Juggler' Santora"
                       className="w-full h-full object-cover rounded-lg shadow-xl"
                     />

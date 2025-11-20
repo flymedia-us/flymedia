@@ -19,7 +19,7 @@ const Clients = () => {
       status: "Current Client",
       description: "A quick-witted comedian and improviser who uses magic as a vehicle for hilarious, high-energy audience interaction. As head writer for Penn & Teller: Fool Us, his style is smart, irreverent, and always unpredictable.",
       highlight: "Craft compelling content showcasing incredible mentalism and audience participation.",
-      image: "/lovable-uploads/The Mind Noodler.jpg",
+      image: "/lovable-uploads/The Mind Noodler.webp",
       instagram: "https://www.instagram.com/mindnoodler/reels/",
       instagramLabel: "@mindnoodler"
     },
@@ -28,7 +28,7 @@ const Clients = () => {
       status: "Current Client",
       description: "An award-winning Italian mentalist and corporate speaker who blends sophisticated mind-reading with a charismatic sense of humor. His unique offerings range from motivational keynotes to a full 'Music & Magic' show with a live band.",
       highlight: "Produce cinematic content to showcase Riccardo's unique blend of magic and narrative.",
-      image: "/lovable-uploads/Riccardo Berdini.jpg",
+      image: "/lovable-uploads/Riccardo Berdini.webp",
       instagram: "https://www.instagram.com/riccardoberdini/reels/",
       instagramLabel: "@riccardoberdini"
     },
@@ -37,7 +37,7 @@ const Clients = () => {
       status: "Current Client",
       description: "A masterful mentalist who operates in the intriguing space between psychological illusion and psychic phenomena. His 'Psychic-ish' brand challenges audiences to question their own perceptions in a smart and captivating performance.",
       highlight: "Enhance online presence with captivating mentalism content and audience engagement",
-      image: "/lovable-uploads/Judge Mentalist.jpg",
+      image: "/lovable-uploads/Judge Mentalist.webp",
       instagram: "https://www.instagram.com/psychicish/reels/",
       instagramLabel: "@psychicish"
     },
@@ -46,7 +46,7 @@ const Clients = () => {
       status: "Current Client",
       description: "A world-record-holding escape artist and comedy magician known for his jaw-dropping stunts and razor-sharp wit. A Golden Buzzer winner on Canada's Got Talent, his work blends extreme performance with philanthropy.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Mark Clearview.jpg",
+      image: "/lovable-uploads/Mark Clearview.webp",
       instagram: "https://www.instagram.com/markclearview/reels/",
       instagramLabel: "@markclearview"
     },
@@ -55,7 +55,7 @@ const Clients = () => {
       status: "Current Client",
       description: "An internationally acclaimed sleight-of-hand artist who creates intimate and mystifying experiences. A native of Ecuador, his masterful technique fooled Penn & Teller and earned his show the #1 spot in New York City.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Siegfried Tieber.jpg",
+      image: "/lovable-uploads/Siegfried Tieber.webp",
       instagram: "https://www.instagram.com/siegfriedtieber/reels/",
       instagramLabel: "@siegfriedtieber"
     },
@@ -64,17 +64,16 @@ const Clients = () => {
       status: "Current Client",
       description: "A theatrical innovator and the UK's original technology magician, known for fusing cutting-edge digital illusions with heartfelt, autobiographical storytelling. His hit show 'Amaze' is a journey through his life in magic.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Jamie Allen.jpg",
+      image: "/lovable-uploads/Jamie Allen.webp",
       instagram: "https://www.instagram.com/amazelive/reels/",
       instagramLabel: "@amazelive"
     },
-
     {
       name: "Lionel Dellberg",
       status: "Current Client",
       description: "A charismatic Swiss magician and cabaret artist who delights international audiences with his humor and charm. A Fool Us trophy winner, he performs his amazing magic in over four languages.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Lionel Dellberg.jpg",
+      image: "/lovable-uploads/Lionel Dellberg.webp",
       instagram: "https://www.instagram.com/lioneldellberg/reels/",
       instagramLabel: "@lioneldellberg"
     },
@@ -83,7 +82,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A Las Vegas headliner, comedian, and world-record holder who twice fooled Penn & Teller. His hit show, Totally Mental, is a high-energy blend of comedy, mind-reading, and unforgettable stunts.",
       highlight: "Build engaging social media presence through creative performance content",
-      image: "/lovable-uploads/Vinny Grosso.jpg",
+      image: "/lovable-uploads/Vinny Grosso.webp",
       instagram: "https://www.instagram.com/vinnygrosso/reels/",
       instagramLabel: "@vinnygrosso"
     },
@@ -92,7 +91,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A Penn & Teller: Fool Us winner who delivers world-class magic for top corporate clients and major faith-based organizations. His performances blend mind-bending illusion with powerful, tailored messaging.",
       highlight: "Create engaging content showcasing mind-bending illusions and audience reactions",
-      image: "/lovable-uploads/Bernini Magic.jpg",
+      image: "/lovable-uploads/Bernini Magic.webp",
       instagram: "https://www.instagram.com/berninimagic/reels/",
       instagramLabel: "@berninimagic"
     },
@@ -101,7 +100,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A polished and hilarious professional magician, known for his comedic style and regular headline performances at Hollywood's Magic Castle. He is also a respected columnist for the industry's top trade journal, Genii.",
       highlight: "Help Nathan connect with new audiences through creative, interactive social content.",
-      image: "/lovable-uploads/Nathan Coe Marsh.jpg",
+      image: "/lovable-uploads/Nathan Coe Marsh.webp",
       instagram: "https://www.instagram.com/nathan_coe_marsh/reels/",
       instagramLabel: "@nathan_coe_marsh"
     },
@@ -110,7 +109,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A high-energy comedy magician and stunt artist who starred in the TruTV series Big Trick Energy. A Penn & Teller: Fool Us winner, his act is a relentless combination of hilarious audience interaction and daring physical stunts.",
       highlight: "Amplify reach with viral videos of jaw-dropping stunts and magical escapes.",
-      image: "/lovable-uploads/Stunt Magician.jpg",
+      image: "/lovable-uploads/Stunt Magician.webp",
       instagram: "https://www.instagram.com/stuntmagician/reels/",
       instagramLabel: "@stuntmagician"
     },
@@ -119,7 +118,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A world-renowned comedy juggling duo holding five Guinness World Records. Two-time finalists on America's Got Talent, they deliver hilarious, high-stakes performances and powerful keynotes on teamwork to top corporations.",
       highlight: "Helped amplify their viral comedy juggling content across multiple platforms",
-      image: "/lovable-uploads/The Passing Zone.jpg",
+      image: "/lovable-uploads/The Passing Zone.webp",
       instagram: "https://www.instagram.com/thepassingzone/reels/",
       instagramLabel: "@thepassingzone"
     },
@@ -128,7 +127,7 @@ const Clients = () => {
       status: "Former Client",
       description: "A truly unique performer who seamlessly blends breathtaking magic with his skills as a professional b-boy (breakdancer). A finalist on Britain's Got Talent, his soulful style combines high-energy dance with powerful storytelling.",
       highlight: "Developed viral content highlighting unique magical performances and character development",
-      image: "/lovable-uploads/Magical Bones.jpg",
+      image: "/lovable-uploads/Magical Bones.webp",
       instagram: "https://www.instagram.com/magicalbones/reels/",
       instagramLabel: "@magicalbones"
     }

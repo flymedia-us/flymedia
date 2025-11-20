@@ -11,39 +11,39 @@ const ClientsCarousel = () => {
   const clients = [
     {
       name: "The Mind Noodler",
-      image: "/lovable-uploads/The Mind Noodler.jpg"
+      image: "/lovable-uploads/The Mind Noodler.webp"
     },
     {
       name: "Vinny Grosso",
-      image: "/lovable-uploads/Vinny Grosso.jpg"
+      image: "/lovable-uploads/Vinny Grosso.webp"
     },
     {
       name: "Judge Mentalist",
-      image: "/lovable-uploads/Judge Mentalist.jpg"
+      image: "/lovable-uploads/Judge Mentalist.webp"
     },
     {
       name: "Riccardo Berdini",
-      image: "/lovable-uploads/Riccardo Berdini.jpg"
+      image: "/lovable-uploads/Riccardo Berdini.webp"
     },
     {
       name: "Mark Clearview",
-      image: "/lovable-uploads/Mark Clearview.jpg"
+      image: "/lovable-uploads/Mark Clearview.webp"
     },
     {
       name: "Siegfried Tieber",
-      image: "/lovable-uploads/Siegfried Tieber.jpg"
+      image: "/lovable-uploads/Siegfried Tieber.webp"
     },
     {
       name: "The Passing Zone",
-      image: "/lovable-uploads/The Passing Zone.jpg"
+      image: "/lovable-uploads/The Passing Zone.webp"
     },
     {
-      name: "Bernini Magic", 
-      image: "/lovable-uploads/Bernini Magic.jpg"
+      name: "Bernini Magic",
+      image: "/lovable-uploads/Bernini Magic.webp"
     },
     {
       name: "Magical Bones",
-      image: "/lovable-uploads/Magical Bones.jpg"
+      image: "/lovable-uploads/Magical Bones.webp"
     }
   ];
 
@@ -80,7 +80,7 @@ const ClientsCarousel = () => {
         </div>
         {/* Add extra padding above carousel to prevent card cutoff on hover */}
         <div className="mt-10 pt-8">
-          <div 
+          <div
             ref={scrollRef}
             className="overflow-x-hidden py-4"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -90,8 +90,8 @@ const ClientsCarousel = () => {
               {[...clients, ...clients].map((client, index) => (
                 <Card key={index} className="dynamic-card flex-shrink-0 w-64">
                   <div className="aspect-square w-full overflow-hidden rounded-t-lg">
-                    <img 
-                      src={client.image} 
+                    <img
+                      src={client.image}
                       alt={client.name}
                       className="w-full h-full object-cover"
                     />
@@ -106,9 +106,9 @@ const ClientsCarousel = () => {
         </div>
         {/* Button to Clients page */}
         <div className="flex justify-center mt-10">
-          <Button 
+          <Button
             asChild
-            size="lg" 
+            size="lg"
             className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto max-w-sm"
           >
             <Link to="/clients" className="flex items-center justify-center">

@@ -10,7 +10,7 @@ interface SEOProps {
 const SEO = ({
     title,
     description = "Transforming performers into viral sensations across all major social media platforms.",
-    image = "/preview.png",
+    image = "/preview.webp",
     url = "https://flymedia.us"
 }: SEOProps) => {
     const siteTitle = "Fly Media";
