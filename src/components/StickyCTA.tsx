@@ -14,7 +14,14 @@ const StickyCTA = () => {
 
             // Show if scrolling down AND past threshold (100px)
             // Hide if scrolling up
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Check if at bottom of page
+            const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+
+            // Show if scrolling down AND past threshold (100px) OR if at bottom
+            // Hide if scrolling up AND not at bottom
+            if (isAtBottom) {
+                setIsVisible(true);
+            } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
                 setIsVisible(true);
             } else if (currentScrollY < lastScrollY) {
                 setIsVisible(false);
