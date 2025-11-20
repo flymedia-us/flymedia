@@ -23,11 +23,6 @@ const Contact = () => {
                 <span className="font-semibold">Sam Friedman:</span>
                 <a href="mailto:sam@flymedia.us" className="text-red-400 hover:underline">sam@flymedia.us</a>
               </div>
-              <div className="flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-red-500" />
-                <span className="font-semibold">Bennett Santora:</span>
-                <a href="mailto:bennett@flymedia.us" className="text-red-400 hover:underline">bennett@flymedia.us</a>
-              </div>
             </CardContent>
           </Card>
         </div>

@@ -11,7 +11,7 @@ const ForPerformers = () => {
             A Team That <span className="gradient-text">Knows Your Needs.</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Led by a team of co-founders who know exactly what it takes to go viral and understand the unique needs of live performers.
+            Founded by a team who knows exactly what it takes to go viral and understands the unique needs of live performers.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const ForPerformers = () => {
                   <div>
 
                     <h3 className="text-xl font-bold text-white">Sam Friedman</h3>
-                    <p className="text-blue-500 font-semibold">Co-Founder & COO</p>
+                    <p className="text-blue-500 font-semibold">Co-Founder & CEO</p>
                   </div>
 
                   <p className="text-gray-300 text-sm leading-relaxed">
@@ -63,8 +63,7 @@ const ForPerformers = () => {
                   </div>
 
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    A performer himself with over 1 million followers across platforms. Bennett understands the
-                    unique challenges of creating viral content that showcases your talent.
+                    A performer himself with over 1 million followers across platforms. Bennett co-founded Fly Media, bringing his unique experience of creating viral content.
                   </p>
 
                   <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
@@ -84,7 +83,7 @@ const ForPerformers = () => {
                             <path d={siInstagram.path} />
                           </svg>
                         </span>
-                        380K+
+                        440K+
                       </a>
                     </Button>
                     <Button
