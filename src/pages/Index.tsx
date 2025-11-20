@@ -40,9 +40,8 @@ const Index = () => {
         <Process />
         <CTA />
         <Footer />
+        <StickyCTA />
       </Suspense>
-
-      <StickyCTA />
     </div>
   );
 };
