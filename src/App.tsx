@@ -12,26 +12,30 @@ import Clients from "./pages/Clients";
 import SocialMediaGuide from "./pages/SocialMediaGuide";
 import YouTubeSetup from "./pages/YouTubeSetup";
 
+import { HelmetProvider } from 'react-helmet-async';
+
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/clients" element={<Clients />} />
-          <Route path="/learn" element={<SocialMediaGuide />} />
-          <Route path="/youtube-setup" element={<YouTubeSetup />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/learn" element={<SocialMediaGuide />} />
+            <Route path="/youtube-setup" element={<YouTubeSetup />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { siInstagram, siTiktok } from 'simple-icons/icons';
+import { siInstagram, siTiktok } from 'simple-icons';
 
 const ForPerformers = () => {
   return (

@@ -46,8 +46,9 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-red-500/5 rounded-full blur-2xl animate-float" style={{ animationDelay: '1s' }}></div>
 
       <div className="container mx-auto px-6 text-center relative z-10 w-full max-w-full">
-        <div className="max-w-4xl mx-auto animate-slide-up">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight break-words">
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight break-words">
             Take Your <span className="gradient-text">Talent</span> <br />to a <span className="gradient-text">Global Stage</span>
           </h1>
 

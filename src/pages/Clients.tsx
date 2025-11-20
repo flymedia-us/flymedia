@@ -4,19 +4,19 @@ import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Users, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { siInstagram } from 'simple-icons/icons';
+import { siInstagram } from 'simple-icons';
 
 import React, { useEffect } from 'react';
 
-const Clients = () => {
+import SEO from '@/components/SEO';
 
-document.title = 'Fly Media | Clients';
+const Clients = () => {
 
   const clients = [
 
     {
       name: "The Mind Noodler",
-      status: "Current Client", 
+      status: "Current Client",
       description: "A quick-witted comedian and improviser who uses magic as a vehicle for hilarious, high-energy audience interaction. As head writer for Penn & Teller: Fool Us, his style is smart, irreverent, and always unpredictable.",
       highlight: "Craft compelling content showcasing incredible mentalism and audience participation.",
       image: "/lovable-uploads/The Mind Noodler.jpg",
@@ -89,7 +89,7 @@ document.title = 'Fly Media | Clients';
     },
     {
       name: "Bernini Magic",
-      status: "Former Client", 
+      status: "Former Client",
       description: "A Penn & Teller: Fool Us winner who delivers world-class magic for top corporate clients and major faith-based organizations. His performances blend mind-bending illusion with powerful, tailored messaging.",
       highlight: "Create engaging content showcasing mind-bending illusions and audience reactions",
       image: "/lovable-uploads/Bernini Magic.jpg",
@@ -136,13 +136,14 @@ document.title = 'Fly Media | Clients';
 
   return (
     <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden">
+      <SEO title="Clients" description="See the amazing performers who trust Fly Media." />
       {/* Floating orbs */}
       <div className="floating-orb w-96 h-96 top-10 -left-20 animate-float"></div>
-      <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="floating-orb w-48 h-48 bottom-20 left-1/4 animate-float" style={{animationDelay: '4s'}}></div>
-      
+      <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="floating-orb w-48 h-48 bottom-20 left-1/4 animate-float" style={{ animationDelay: '4s' }}></div>
+
       <Header />
-      
+
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-slide-up">
@@ -153,7 +154,7 @@ document.title = 'Fly Media | Clients';
               Our <span className="gradient-text">Clients</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              We're proud to work with talented performers who trust us to amplify their unique artistry 
+              We're proud to work with talented performers who trust us to amplify their unique artistry
               and connect with audiences worldwide.
             </p>
           </div>
@@ -163,8 +164,8 @@ document.title = 'Fly Media | Clients';
               <Card key={index} className="dynamic-card h-full">
                 <div className="flex flex-col md:flex-row h-full">
                   <div className="md:w-1/2 aspect-square md:aspect-auto overflow-hidden rounded-t-lg md:rounded-l-lg md:rounded-tr-none">
-                    <img 
-                      src={client.image} 
+                    <img
+                      src={client.image}
                       alt={client.name}
                       className="w-full h-full object-cover"
                     />
@@ -173,11 +174,10 @@ document.title = 'Fly Media | Clients';
                     <CardHeader className="pb-4">
                       <div className="flex items-center justify-between mb-2">
                         <CardTitle className="text-white text-xl">{client.name}</CardTitle>
-                        <div className={`px-2 py-1 rounded-full text-xs font-semibold ${
-                          client.status === 'Current Client' 
-                            ? 'bg-green-600/20 text-green-400 border border-green-600/30' 
-                            : 'bg-blue-600/20 text-blue-400 border border-blue-600/30'
-                        }`}>
+                        <div className={`px-2 py-1 rounded-full text-xs font-semibold ${client.status === 'Current Client'
+                          ? 'bg-green-600/20 text-green-400 border border-green-600/30'
+                          : 'bg-blue-600/20 text-blue-400 border border-blue-600/30'
+                          }`}>
                           {client.status}
                         </div>
                       </div>
@@ -193,13 +193,13 @@ document.title = 'Fly Media | Clients';
                         </p>
                       </div> */}
                       {client.instagram && (
-                        <Button 
-                          asChild 
+                        <Button
+                          asChild
                           className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white mt-2"
                         >
-                          <a 
-                            href={client.instagram} 
-                            target="_blank" 
+                          <a
+                            href={client.instagram}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center"
                           >
@@ -220,7 +220,7 @@ document.title = 'Fly Media | Clients';
           </div>
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );

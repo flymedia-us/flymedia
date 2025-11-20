@@ -4,96 +4,31 @@ import { Check, Star, Zap, Crown, Calendar, Mail, Plus } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+import { PRICING_PLANS } from '@/config/constants';
+
+import SEO from '@/components/SEO';
+
 const Pricing = () => {
 
-  document.title = 'Fly Media | Pricing';
-
-  const plans = [
-    {
-      name: "Basic",
-      icon: <Zap className="w-8 h-8 text-blue-500" />,
-      price: "$749",
-      period: "/month",
-      description: "Perfect for performers starting their social media journey",
-      features: [
-        "3x edited videos/week",
-        "0% booking commission",
-        "Unlimited cloud storage",
-        "Monthly analytics report",
-        "Core platforms:",
-        "• YouTube",
-        "• Instagram", 
-        "• TikTok",
-        "Platform rewards split 50-50"
-      ],
-      popular: false,
-      value: false,
-      gradient: "from-blue-600/20 to-purple-600/20"
-    },
-    {
-      name: "Growth",
-      icon: <Star className="w-8 h-8 text-red-500" />,
-      price: "$1,499",
-      period: "/month",
-      description: "For the rising star and regular performer ready to dominate social media",
-      features: [
-        "5x edited videos/week",
-        "0% booking commission",
-        "Unlimited cloud storage",
-        "Monthly analytics report",
-        "Expanded platforms:",
-        "• YouTube",
-        "• Instagram",
-        "• TikTok", 
-        "• Facebook",
-        "• Snapchat",
-        "You earn 70% platform rewards",
-        "Custom thumbnails for videos"
-      ],
-      popular: true,
-      value: false,
-      gradient: "from-red-600/20 to-orange-600/20"
-    },
-    {
-      name: "Pro",
-      icon: <Crown className="w-8 h-8 text-yellow-500" />,
-      price: "$2,999",
-      period: "/month",
-      description: "Everything, everywhere. All done for you for maximum viral potential",
-      features: [
-        "7x edited videos/week",
-        "0% booking commission",
-        "Unlimited cloud storage",
-        "Monthly analytics report",
-        "Unlimited platforms:",
-        "• YouTube",
-        "• Instagram",
-        "• TikTok", 
-        "• Facebook",
-        "• Snapchat",
-        "• Add LinkedIn, X, Threads, Bluesky, Reddit",
-        "You earn 100% platform rewards",
-        "Custom thumbnails for videos",
-        "Profile optimization for conversions",
-        "• Includes blue-check verification badge",
-        "Full-service community engagement",
-        "• Automatic comments",
-        "• We respond to comments and messages for you",
-        "Weekly strategy calls"
-      ],
-      popular: false,
-      value: true,
-      gradient: "from-yellow-600/20 to-amber-600/20"
+  const getIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'Zap': return <Zap className="w-8 h-8 text-blue-500" />;
+      case 'Star': return <Star className="w-8 h-8 text-red-500" />;
+      case 'Crown': return <Crown className="w-8 h-8 text-yellow-500" />;
+      default: return <Zap className="w-8 h-8 text-blue-500" />;
     }
-  ];
+  };
+
+  const plans = PRICING_PLANS;
 
 
   return (
     <div className="min-h-screen w-full max-w-full animate-gradient text-white overflow-x-hidden fixed left-0 right-0 top-0 bottom-0">
+      <SEO title="Pricing" description="Choose the perfect plan to launch your social media success." />
       {/* Floating orbs */}
       <div className="floating-orb w-96 h-96 top-10 -left-20 animate-float"></div>
-      <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{animationDelay: '2s'}}></div>
-      <div className="floating-orb w-48 h-48 bottom-20 left-1/4 animate-float" style={{animationDelay: '4s'}}></div>
+      <div className="floating-orb w-64 h-64 top-1/2 -right-32 animate-float" style={{ animationDelay: '2s' }}></div>
+      <div className="floating-orb w-48 h-48 bottom-20 left-1/4 animate-float" style={{ animationDelay: '4s' }}></div>
       <Header />
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto">
@@ -107,8 +42,8 @@ const Pricing = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
             {plans.map((plan, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className={`dynamic-card relative overflow-hidden h-full flex flex-col transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-red-500' : ''} ${plan.value ? 'ring-2 ring-yellow-400' : ''}`}
               >
                 {plan.popular && (
@@ -117,14 +52,14 @@ const Pricing = () => {
                   </div>
                 )}
                 {plan.value && (
-                  <div className="absolute left-0 right-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-black text-center py-2 text-sm font-semibold z-20" style={{top: plan.popular ? '2.5rem' : 0}}>
+                  <div className="absolute left-0 right-0 bg-gradient-to-r from-yellow-400 to-amber-400 text-black text-center py-2 text-sm font-semibold z-20" style={{ top: plan.popular ? '2.5rem' : 0 }}>
                     BEST VALUE
                   </div>
                 )}
                 <div className={`absolute inset-0 bg-gradient-to-br ${plan.gradient} opacity-50`}></div>
-                <CardHeader className="relative z-10 text-center pb-4" style={{paddingTop: plan.popular && plan.value ? '5rem' : plan.popular || plan.value ? '3rem' : '1.5rem'}}>
+                <CardHeader className="relative z-10 text-center pb-4" style={{ paddingTop: plan.popular && plan.value ? '5rem' : plan.popular || plan.value ? '3rem' : '1.5rem' }}>
                   <div className="mx-auto mb-4 p-4 bg-black/30 rounded-full w-fit">
-                    {plan.icon}
+                    {getIcon(plan.iconName)}
                   </div>
                   <CardTitle className="text-white text-2xl mb-2">{plan.name}</CardTitle>
                   <div className="mb-4">
@@ -157,8 +92,8 @@ const Pricing = () => {
             ))}
           </div>
           <div className="flex justify-center mt-20">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
               onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
             >
@@ -168,10 +103,10 @@ const Pricing = () => {
           </div>
           <div className="text-center mt-16">
             <p className="text-gray-400 mb-4">Need a custom plan? Have questions?</p>
-            <Button 
+            <Button
               asChild
-              variant="outline" 
-              size="lg" 
+              variant="outline"
+              size="lg"
               className="border-red-600 text-red-500 hover:bg-red-600 hover:text-white"
             >
               <a href="/contact">

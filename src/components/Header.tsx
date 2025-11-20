@@ -37,7 +37,7 @@ const Header = () => {
             >
               Contact
             </Link>
-            <Button asChild className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow">
+            <Button asChild className="bg-red-600 hover:bg-red-700 text-white animate-pulse-glow shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:shadow-[0_0_25px_rgba(220,38,38,0.7)] transition-all duration-300">
               <a href={DISCOVERY_CALL_URL} target="_blank" rel="noopener noreferrer">
                 Get Started
               </a>
