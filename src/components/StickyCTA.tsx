@@ -36,7 +36,7 @@ const StickyCTA = () => {
 
     return (
         <div
-            className={`fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/90 to-transparent z-[100] md:hidden transition-transform duration-500 ease-in-out pointer-events-none ${isVisible ? 'translate-y-0' : 'translate-y-full'
+            className={`fixed bottom-0 left-0 right-0 p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] bg-gradient-to-t from-black via-black/90 to-transparent z-[100] md:hidden transition-transform duration-500 ease-in-out pointer-events-none ${isVisible ? 'translate-y-0' : 'translate-y-full'
                 }`}
         >
             <div className="pointer-events-auto">
