@@ -2,7 +2,7 @@
 
 Fly Media is a specialized agency dedicated to helping live performers—magicians, jugglers, and variety artists—grow their social media presence. This repository contains the source code for the Fly Media landing page and web presence.
 
-> Built with the help of [Lovable](https://lovable.dev/) and Google Antigravity.
+> Built with the help of [Lovable](https://lovable.dev/) and [Google Antigravity](https://antigravity.google/).
 
 ## 🚀 Tech Stack
 
