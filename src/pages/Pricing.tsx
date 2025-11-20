@@ -4,7 +4,7 @@ import { Check, Star, Zap, Crown, Calendar, Mail, Plus } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-import { PRICING_PLANS } from '@/config/constants';
+import { PRICING_PLANS, DISCOVERY_CALL_URL } from '@/config/constants';
 
 import SEO from '@/components/SEO';
 
@@ -95,7 +95,7 @@ const Pricing = () => {
             <Button
               size="lg"
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg animate-pulse-glow w-full sm:w-auto"
-              onClick={() => window.open('https://calendar.app.google/SwCqN1pHeeAcU2ev7', '_blank')}
+              onClick={() => window.open(DISCOVERY_CALL_URL, '_blank')}
             >
               <Calendar className="mr-2" size={20} />
               Book a Complimentary Call
