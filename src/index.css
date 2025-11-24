@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -50,23 +49,38 @@
 
 /* Static background */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(220, 38, 38, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(220, 38, 38, 0.6); }
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(220, 38, 38, 0.6);
+  }
 }
 
 @keyframes slide-up {
-  from { 
-    opacity: 0; 
-    transform: translateY(30px); 
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -122,8 +136,11 @@
 /* Mobile hero text positioning fix */
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 6rem; /* Ensure text is below mobile header */
+    padding-top: 10rem;
+    /* Ensure text is below mobile header */
     padding-bottom: 2rem;
+    min-height: 100dvh;
+    /* Use dynamic viewport height for mobile */
   }
 }
 
@@ -132,10 +149,12 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100vw;
-  background-color: #000000; /* Ensure overscroll is black */
+  background-color: #000000;
+  /* Ensure overscroll is black */
 }
 
 #root {

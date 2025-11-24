@@ -12,7 +12,10 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-blue-900/30">
+    <header
+      className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-blue-900/30"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
       <PromoBanner />
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
